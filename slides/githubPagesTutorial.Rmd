@@ -1,6 +1,6 @@
 ---
 title: "Github Pages Tutorial"
-author: "Ted Laderas, Eric Leung, and Robin Champieux"
+author: "Ted Laderas (laderast@ohsu.edu), Eric Leung, and Robin Champieux"
 date: "4/5/2017"
 output:
   slidy_presentation: default

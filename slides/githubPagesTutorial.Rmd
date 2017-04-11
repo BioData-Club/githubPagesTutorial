@@ -36,6 +36,10 @@ GitHub is a highly dependable webhost, and you get one personal webpage account 
 
 Because GitHub pages is compatible with markdown, we'll be using markdown formatting to build our webpage.
 
+## What We're Going to do Today
+
+  1) 
+
 ## Let's Make a Personal Webpage
 
 If you have a GitHub account with USERNAME, you can serve a webpage directly from USERNAME.github.io. For example: http://laderast.github.io

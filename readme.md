@@ -11,3 +11,7 @@ Things you need before you can start:
   3) A Good Text Editor (Sublime or Atom are good ones)
   4) Something to say
   5) Photos (optional)
+
+## Attribution
+  
+This tutorial uses Mark Otto's [Hyde Template for Jekyll](http://hyde.getpoole.com) with some simple modifications to make it Jeykll 3.0 Compatible

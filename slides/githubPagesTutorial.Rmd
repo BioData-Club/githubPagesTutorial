@@ -30,6 +30,12 @@ You don't need to know how to code to setup a GitHub page. We'll learn some Mark
 + Something to say
 + Pictures (optional)
 
+## Why GitHub Pages?
+
+GitHub is a highly dependable webhost, and you get one personal webpage account for free. 
+
+Because GitHub pages is compatible with markdown, we'll be using markdown formatting to build our webpage.
+
 ## Let's Make a Personal Webpage
 
 If you have a GitHub account with USERNAME, you can serve a webpage directly from USERNAME.github.io. For example: http://laderast.github.io
@@ -42,6 +48,19 @@ When you've created the repository, "publish" it to GitHub.
 Once you've published the repository, try your personal webpage: http://USERNAME.github.io
 
 ## File Structure
+
+We are first going to rename the `websiteFiles` directory to match the name of your webpage repo. 
+
+
+
+## Editing the Name of Your Blog
+
+The first step to customizing your webpage is to edit the blogs name to 
+include your information. You'll open the `_config.yml` file to update
+the info.
+
+Here's an example `_config.yml` file.
+
 
 
 

@@ -38,7 +38,15 @@ Because GitHub pages is compatible with markdown, we'll be using markdown format
 
 ## What We're Going to do Today
 
-  1) 
+  1) Download this repo
+  2) Make a local repo with the `websiteFolder`
+  3) Change and Personalize Your Site with YAML
+  4) Publish your Repo to GitHub
+  5) Look at your pretty website!
+  6) Start Editing Content
+  7) Add a Blog Post
+  8) Customize your sidebar
+  9) Look at your pretty website!
 
 ## Let's Make a Personal Webpage
 

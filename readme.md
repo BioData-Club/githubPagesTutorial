@@ -2,11 +2,11 @@
 
 Welcome to the GitHub Pages Tutorial! 
 
-With a text editor and the GitHub Desktop, you can start your own personal website on GitHub.
+With a text editor and the GitHub Desktop, you can start your own personal website on GitHub. Bring your laptop and we'll explore the fun world of GitHub Pages!
 
-Things you need before you can start:
+Things you need to do before you can start:
 
-  1) A Github Account
+  1) A [Github Account](https://github.com/join?source=header-home)
   2) Download the GitHub Desktop App
   3) A Good Text Editor ([Sublime](https://www.sublimetext.com) or [Atom](https://atom.io) are good ones)
   4) Something to say

@@ -36,6 +36,10 @@ GitHub is a highly dependable webhost, and you get one personal webpage account 
 
 Because GitHub pages is compatible with markdown, we'll be using markdown formatting to build our webpage.
 
+## Our goal for the day
+
+We're going to build a personal webpage which will live at USERNAME.github.io, and have blogging features and will be easily customizable. 
+
 ## What We're Going to do Today
 
   1) Download this repo
@@ -50,40 +54,38 @@ Because GitHub pages is compatible with markdown, we'll be using markdown format
 
 ## Download the Repo
 
-Go to tutorial page
+Clone the the repo at: https://github.com/BioData-Club/githubPagesTutorial/ (click the "Clone or Download" button to open it in your GitHub Desktop).
 
-Take out `webSite` folder and rename it to USERNAME.github.io, where USERNAME is your GitHub username.
+Using a file manager, take out the `websiteFiles` folder and rename it to USERNAME.github.io, where USERNAME is your GitHub username.
 
 I like to have a code specific folder to store my code, such as "c:/code/" (windows) or "~/Code/" (Mac/Linux) so that it has a permanent place to stay. This will be important when you push changes to your website. So create a code-specific folder and put the USERNAME.github.io folder in it.
 
-In GitHub Desktop add the repo using the "+" symbol and use ""
+In GitHub Desktop add the repo using the "+" symbol and use the "Add" tab to add your folder. "Publish" the folder to GitHub using the "Publish" button. 
 
 ## Let's Make a Personal Webpage
 
-If you have a GitHub account with USERNAME, you can serve a webpage directly from USERNAME.github.io. For example: http://laderast.github.io
-
-You first need to create a repository with USERNAME.github.com. From GitHub Desktop, click the "+" symbol, and create a new repository. 
-
-When you've created the repository, "publish" it to GitHub.
-
 Once you've published the repository, try your personal webpage: http://USERNAME.github.io
 
-## File Structure
+Now we'll start customizing it.
 
-We are first going to rename the `websiteFiles` directory to match the name of your webpage repo. 
-
-
-
-## Editing the Name of Your Blog
+## Editing the Name of Your Webpage and Customizing
 
 The first step to customizing your webpage is to edit the blogs name to 
 include your information. You'll open the `_config.yml` file to update
-the info.
+the info. Change the *title*, *tagline*, *description*, and *url* fields.
 
 Here's an example `_config.yml` file.
 
-
-
+```
+# Personalize your website info here
+title:            Anew Guy
+tagline:          'Professional Website for Anew Guy'
+description:      'Website and Blog for Anew Guy'
+url:              http://anewguy.github.io
+author:
+  name:           'Anew Guy'
+  url:            https://twitter.com/anewguy
+```
 
 ## Markdown and Index.md
 

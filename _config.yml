@@ -1,26 +1,17 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
-
-# Permalinks
-permalink:        pretty
-
-# Setup
+# Personalize your website info here
 title:            Anew Guy
 tagline:          'Professional Website for Anew Guy'
 description:      'Website and Blog for Anew Guy'
-url:              http://biodata-club.github.io/githubPagesTutorial
-baseurl:          /
-
+url:              http://anewguy.github.io
 author:
   name:           'Anew Guy'
   url:            https://twitter.com/anewguy
 
+## You don't need to modify below this line
 paginate:         5
 
 # Custom vars
 version:          2.1.0
-
 github:
   repo:           https://github.com/poole/hyde
 
@@ -28,4 +19,10 @@ gems: [jekyll-paginate,jekyll-gist, redcarpet]
 paginate: 5
 paginate_path: "page:num"
 
-markdown: kramdown
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+baseurl:          /

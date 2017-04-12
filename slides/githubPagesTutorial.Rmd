@@ -48,11 +48,21 @@ Because GitHub pages is compatible with markdown, we'll be using markdown format
   8) Customize your sidebar
   9) Look at your pretty website!
 
+## Download the Repo
+
+Go to tutorial page
+
+Take out `webSite` folder and rename it to USERNAME.github.io, where USERNAME is your GitHub username.
+
+I like to have a code specific folder to store my code, such as "c:/code/" (windows) or "~/Code/" (Mac/Linux) so that it has a permanent place to stay. This will be important when you push changes to your website. So create a code-specific folder and put the USERNAME.github.io folder in it.
+
+In GitHub Desktop add the repo using the "+" symbol and use ""
+
 ## Let's Make a Personal Webpage
 
 If you have a GitHub account with USERNAME, you can serve a webpage directly from USERNAME.github.io. For example: http://laderast.github.io
 
-You first need to create a repository with that name. From GitHub Desktop, click the "+" symbol, and create a new repository. 
+You first need to create a repository with USERNAME.github.com. From GitHub Desktop, click the "+" symbol, and create a new repository. 
 
 When you've created the repository, "publish" it to GitHub.
 

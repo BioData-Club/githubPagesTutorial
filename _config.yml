@@ -25,4 +25,4 @@ highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
-baseurl:          /githubPagesTutorial
+baseurl:          https://biodata-club.github.io/githubPagesTutorial/

@@ -45,40 +45,87 @@ Ted Laderas (<a href="mailto:laderast@ohsu.edu">laderast@ohsu.edu</a>), Eric Leu
 <p>GitHub is a highly dependable webhost, and you get one personal webpage account for free.</p>
 <p>Because GitHub pages is compatible with markdown, we’ll be using markdown formatting to build our webpage.</p>
 </div>
+<div id="our-goal-for-the-day" class="slide section level2">
+<h1>Our goal for the day</h1>
+<p>We’re going to build a personal webpage which will live at USERNAME.github.io, and have blogging features and will be easily customizable.</p>
+</div>
+<div id="what-were-going-to-do-today" class="slide section level2">
+<h1>What We’re Going to do Today</h1>
+<ol style="list-style-type: decimal">
+<li>Download this repo</li>
+<li>Make a local repo with the <code>websiteFolder</code></li>
+<li>Change and Personalize Your Site with YAML</li>
+<li>Publish your Repo to GitHub</li>
+<li>Look at your pretty website!</li>
+<li>Start Editing Content</li>
+<li>Add a Blog Post</li>
+<li>Customize your sidebar</li>
+<li>Look at your pretty website!</li>
+</ol>
+</div>
+<div id="download-the-repo" class="slide section level2">
+<h1>Download the Repo</h1>
+<p>Clone the the repo at: <a href="https://github.com/BioData-Club/githubPagesTutorial/" class="uri">https://github.com/BioData-Club/githubPagesTutorial/</a> (click the “Clone or Download” button to open it in your GitHub Desktop).</p>
+<p>Using a file manager, take out the <code>websiteFiles</code> folder and rename it to USERNAME.github.io, where USERNAME is your GitHub username.</p>
+<p>I like to have a code specific folder to store my code, such as “c:/code/” (windows) or “~/Code/” (Mac/Linux) so that it has a permanent place to stay. This will be important when you push changes to your website. So create a code-specific folder and put the USERNAME.github.io folder in it.</p>
+<p>In GitHub Desktop add the repo using the “+” symbol and use the “Add” tab to add your folder. “Publish” the folder to GitHub using the “Publish” button.</p>
+</div>
 <div id="lets-make-a-personal-webpage" class="slide section level2">
 <h1>Let’s Make a Personal Webpage</h1>
-<p>If you have a GitHub account with USERNAME, you can serve a webpage directly from USERNAME.github.io. For example: <a href="http://laderast.github.io" class="uri">http://laderast.github.io</a></p>
-<p>You first need to create a repository with that name. From GitHub Desktop, click the “+” symbol, and create a new repository.</p>
-<p>When you’ve created the repository, “publish” it to GitHub.</p>
 <p>Once you’ve published the repository, try your personal webpage: <a href="http://USERNAME.github.io" class="uri">http://USERNAME.github.io</a></p>
+<p>Now we’ll start customizing it.</p>
 </div>
-<div id="file-structure" class="slide section level2">
-<h1>File Structure</h1>
-<p>We are first going to rename the <code>websiteFiles</code> directory to match the name of your webpage repo.</p>
-</div>
-<div id="editing-the-name-of-your-blog" class="slide section level2">
-<h1>Editing the Name of Your Blog</h1>
-<p>The first step to customizing your webpage is to edit the blogs name to include your information. You’ll open the <code>_config.yml</code> file to update the info.</p>
+<div id="editing-the-name-of-your-webpage-and-customizing" class="slide section level2">
+<h1>Editing the Name of Your Webpage and Customizing</h1>
+<p>The first step to customizing your webpage is to edit the blogs name to include your information. You’ll open the <code>_config.yml</code> file to update the info. Change the <em>title</em>, <em>tagline</em>, <em>description</em>, and <em>url</em> fields.</p>
 <p>Here’s an example <code>_config.yml</code> file.</p>
+<pre><code># Personalize your website info here
+title:            Anew Guy
+tagline:          'Professional Website for Anew Guy'
+description:      'Website and Blog for Anew Guy'
+url:              http://anewguy.github.io
+author:
+  name:           'Anew Guy'
+  url:            https://twitter.com/anewguy</code></pre>
 </div>
 <div id="markdown-and-index.md" class="slide section level2">
 <h1>Markdown and Index.md</h1>
 <p>Anything with index.md will be automatically translated and served as a webpage.</p>
 <p>Using Jekyll, you can add header and footers and other templating features, standardizing the look of your pages as you like.</p>
-<p>One thing to remember is when your output is html, you can embed HTML tags, which is especially useful for embedding images, since you can adjust image size directly within the tag.</p>
+<p>One thing to remember is when your output is HTML, so you can embed HTML tags, which is especially useful for embedding images, since you can adjust image size directly within the tag.</p>
 </div>
 <div id="lets-add-some-links" class="slide section level2">
 <h1>Let’s Add Some Links</h1>
+<p>Links, or URLs and web addresses, you see on websites can link to other webpages.</p>
+<p>In your index.md file, you can add a link by enclosing the text for your link in square brackets (<code>[text here]</code>) and the underlying link in parentheses (<code>(http://link-here.com)</code>) right next to it. So altogether, it should look like this:</p>
+<pre><code>[link to Google](https://www.google.com)</code></pre>
 </div>
 <div id="lets-add-an-image" class="slide section level2">
 <h1>Let’s Add an Image</h1>
+<p>You can also add images to your webpage. GitHub has a mascot called Octocat, so let’s add a picture of one to our site. Similar to how we added a link, you just need to add an exclamation mark in front of the square bracket and parentheses.</p>
+<p>An example looks like this</p>
+<pre><code>![Jetpacktocat](https://octodex.github.com/images/jetpacktocat.png)</code></pre>
+<p><strong>Note</strong>: the text within the square brackets should generally be a description of image, but you can leave it blank if you want so the following would also work.</p>
+<pre><code>![](https://octodex.github.com/images/jetpacktocat.png)</code></pre>
 </div>
 <div id="add-a-blog-entry" class="slide section level2">
 <h1>Add a Blog Entry</h1>
-<p>Your current repository is setup for blog entries.</p>
+<p>Your current repository is setup for blog entries. In your newly renamed <code>websiteFiles/</code> folder, you’ll find another folder named <code>_posts</code>. This is where you’ll put new blog posts.</p>
+<p>Each post you make should be in the form <code>YEAR-MONTH-DAY-title.md</code>, so for example, <code>2017-04-21-github-pages-tutorial.md</code>. You’ll also want a <code>.yaml</code>-like text near the top.</p>
+<pre><code>---
+layout: post
+title: Awesome Blog Post
+---</code></pre>
 </div>
 <div id="modifying-the-menu" class="slide section level2">
 <h1>Modifying the Menu</h1>
+<p>If you take a look at the example site, <a href="https://biodata-club.github.io/githubPagesTutorial/" class="uri">https://biodata-club.github.io/githubPagesTutorial/</a>, you’ll notice a menu side bar on the left. Near the bottom left corner, you’ll see links to other pages on the site. We can add and remove these links and their respective pages fairly easily.</p>
+<p>Looking at the files in your main directory (which are the contents from <code>websiteFiles/</code>), the menu is automatically generated based on the files that end in <code>.md</code> (except <code>LICENSE.md</code> and <code>README.md</code>). If you take a look, you can see <code>about.md</code>, <code>cv.md</code>, and <code>about.md</code>. Similarly named links should be in the menu.</p>
+<p>To create a new page, you need to have the following at the top and just change the text for the title.</p>
+<pre><code>---
+layout: page
+title: About
+---</code></pre>
 </div>
 <div id="github-pages" class="slide section level2">
 <h1>GitHub Pages</h1>

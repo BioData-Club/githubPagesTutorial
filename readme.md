@@ -6,8 +6,6 @@ With a text editor and the GitHub Desktop, you can start your own personal websi
 
 ## What You Need to Start
 
-You don't need to know how to code to setup a GitHub page. We'll learn some Markdown basics
-
 + [A GitHub Account](https://github.com/join?source=header-home)
 + [GitHub Desktop](https://desktop.github.com/)
 + Text Editor (we prefer [Sublime](https://www.sublimetext.com), but [Atom](https://atom.io) is also good)

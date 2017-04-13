@@ -93,21 +93,61 @@ Anything with index.md will be automatically translated and served as a webpage.
 
 Using Jekyll, you can add header and footers and other templating features, standardizing the look of your pages as you like.
 
-One thing to remember is when your output is html, you can embed HTML tags, which is especially useful for embedding images, since you can adjust image size directly within the tag.
+One thing to remember is when your output is HTML, so you can embed HTML tags, which is especially useful for embedding images, since you can adjust image size directly within the tag.
 
 ## Let's Add Some Links
 
+Links, or URLs and web addresses, you see on websites can link to other webpages.
 
+In your index.md file, you can add a link by enclosing the text for your link in square brackets (`[text here]`) and the underlying link in parentheses (`(http://link-here.com)`) right next to it. So altogether, it should look like this: 
+
+```
+[link to Google](https://www.google.com)
+```
 
 ## Let's Add an Image
 
+You can also add images to your webpage. GitHub has a mascot called Octocat, so let's add a picture of one to our site. Similar to how we added a link, you just need to add an exclamation mark in front of the square bracket and parentheses.
+
+An example looks like this 
+
+```
+![Jetpacktocat](https://octodex.github.com/images/jetpacktocat.png)
+```
+
+**Note**: the text within the square brackets should generally be a description of image, but you can leave it blank if you want so the following would also work.
+
+```
+![](https://octodex.github.com/images/jetpacktocat.png)
+```
+
 ## Add a Blog Entry
 
-Your current repository is setup for blog entries. 
+Your current repository is setup for blog entries. In your newly renamed `websiteFiles/` folder, you'll find another folder named `_posts`. This is where you'll put new blog posts.
+
+Each post you make should be in the form `YEAR-MONTH-DAY-title.md`, so for example, `2017-04-21-github-pages-tutorial.md`. You'll also want a `.yaml`-like text near the top.
+
+```
+---
+layout: post
+title: Awesome Blog Post
+---
+```
 
 ## Modifying the Menu
 
+If you take a look at the example site, https://biodata-club.github.io/githubPagesTutorial/, you'll notice a menu side bar on the left. Near the bottom left corner, you'll see links to other pages on the site. We can add and remove these links and their respective pages fairly easily.
 
+Looking at the files in your main directory (which are the contents from `websiteFiles/`), the menu is automatically generated based on the files that end in `.md` (except `LICENSE.md` and `README.md`). If you take a look, you can see `about.md`, `cv.md`, and `about.md`. Similarly named links should be in the menu.
+
+To create a new page, you need to have the following at the top and just change the text for the title.
+
+```
+---
+layout: page
+title: About
+---
+```
 
 ## GitHub Pages
 

@@ -2,7 +2,9 @@
 
 Welcome to the GitHub Pages Tutorial!
 
-With a text editor and the GitHub Desktop, you can start your own personal website on GitHub. Bring your laptop and we'll explore the fun world of GitHub Pages!
+With a text editor and GitHub Desktop, you can create a personal website on GitHub. Bring your laptop and we'll explore the fun world of GitHub Pages! 
+
+:fireworks::tada::ghost::mushroom::guitar::sparkles::fireworks::tada::ghost::mushroom::guitar::sparkles::fireworks::tada:
 
 ## What You Need to Start
 

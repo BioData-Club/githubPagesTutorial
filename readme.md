@@ -22,7 +22,7 @@ You may want to spend a little time learning how to use markdown, as it'll make 
 
 If you want to use GitHub Desktop, open up `intermediate/githubPagesTutorial.pdf`. Then it's just a matter of following directions. 
 
-Our easier version is available in the `easy` folder and 
+Our easier version is available in the `easy` folder and also at: https://biodata-club.github.io/githubPagesTutorial/easy/ It only requires a laptop and a GitHub account.
 
 Be sure to use your Post-Its if you're stuck and one of us will help you.
 

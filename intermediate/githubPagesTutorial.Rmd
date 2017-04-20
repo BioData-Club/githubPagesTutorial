@@ -3,7 +3,8 @@ title: "Github Pages Tutorial"
 author: "Ted Laderas (laderast@ohsu.edu), Eric Leung, and Robin Champieux"
 date: "4/21/2017"
 output:
-  pdf_document
+  pdf_document: default
+  html_document: default
 ---
 
 ## What is GitHub Pages?
@@ -63,7 +64,7 @@ Clone the the repo at: https://github.com/BioData-Club/githubPagesTutorial/ (cli
 
 ## 2. Make a local repo
 
-Using a file manager, take out the `websiteFiles` folder and rename it to USERNAME.github.io, where USERNAME is your GitHub username.
+Using a file manager, take out the `websiteFiles` folder from the `intermediate` folder and rename it to USERNAME.github.io, where USERNAME is your GitHub username.
 
 I like to have a code specific folder to store my code, such as "c:/code/" (windows) or "~/Code/" (Mac/Linux) so that it has a permanent place to stay. 
 

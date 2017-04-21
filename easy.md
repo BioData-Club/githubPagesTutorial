@@ -17,13 +17,13 @@ We'll mostly cover the personal website for today.
 
 ## Why GitHub Pages?
 
-GitHub is a highly dependable webhost, and you get one personal webpage account for free. 
+GitHub is a highly dependable webhost, and you get one personal webpage account for free.
 
 Because GitHub pages is compatible with Markdown, we'll be using Markdown formatting to build our webpage.
 
 ## Our goal for the day
 
-We're going to build a personal webpage which will live at USERNAME.github.io, and have blogging features and will be easily customizable. 
+We're going to build a personal webpage which will live at USERNAME.github.io, and have blogging features and will be easily customizable.
 
 There's an example of a blog here: https://biodata-club.github.io/githubPagesTutorial/
 
@@ -40,29 +40,29 @@ You may want to spend a little time learning how to use markdown, as it'll make 
 
 ## What We're Going to do Today
 
-  1) Fork the Repository
-  2) Rename the Repo(sitory)
-  3) Look at your pretty website!
-  4) Change and Personalize Your Site with YAML
-  5) Start Editing Content with Markdown 
-  6) Adding Links
-  7) Adding Images
-  8) Add a Blog Post
-  9) Customize your sidebar with new links
-  10) Look at your pretty website!
-  11) Make a local copy for easier editing
+1. Fork the Repository
+2. Rename the Repo(sitory)
+3. Look at your pretty website!
+4. Change and Personalize Your Site with YAML
+5. Start Editing Content with Markdown
+6. Adding Links
+7. Adding Images
+8. Add a Blog Post
+9. Customize your sidebar with new links
+10. Look at your pretty website!
+11. Make a local copy for easier editing
 
 ## 1. Fork the Repo(istory) From GitHub
 
-Log into your GitHub account. Now go to the website repo: https://github.com/laderast/websiteFiles and click the "Fork" button on the top right of the webpage.
+Log into your GitHub account. Now go to the website repo: [https://github.com/laderast/websiteFiles](https://github.com/laderast/websiteFiles) and click the "Fork" button on the top right of the webpage.
 
 ## 2. Rename the Repo
 
-Now click the "Settings" tab on your repository. Change your repository name to USERNAME.github.io, where USERNAME is your GitHub Login.
+Now click the "Settings" tab on your repository. Change your repository name to `USERNAME.github.io`, where `USERNAME` is your GitHub Login.
 
 ## 3. Check out your Basic Website
 
-You're ready to go! Now check out your initialized website at https://USERNAME.github.io. We'll start customizing it!
+You're ready to go! Now check out your initialized website at `https://USERNAME.github.io`. We'll start customizing it!
 
 ## 4. Editing the Name of Your Webpage and Customizing
 
@@ -86,11 +86,11 @@ After you have edited your `_config.yml` file, click the green "Commit your chan
 
 Reload your website to see your changes. It may take a little bit, since GitHub needs to rebuild your page in the background.
 
-## 5a. Make content using Markdown 
+## 5a. Make content using Markdown
 
 We'll be adding our content by using Markdown Files. Markdown is a lightweight way to format text that is much easier to manipulate than working with HTML files directly.
 
-GitHub has a "translation engine" that will transform and format your Markdown files for the website to make them browser-friendly. 
+GitHub has a "translation engine" that will transform and format your Markdown files for the website to make them browser-friendly.
 
 This means you can concentrate on making content rather than obsessing about every little site detail. There are lots of designers who are good at that if you aren't.
 
@@ -98,9 +98,9 @@ This means you can concentrate on making content rather than obsessing about eve
 
 A markdown file generally has an `.md` or a `.markdown` extension. Let's open the file in `_posts/2012-02-07-example-content.md` in GitHub and you'll see some examples of how to write in markdown.
 
-Way more info about writing markdown can be found here: https://github.com/laderast/magic-of-markdown
+Way more info about writing markdown can be found here: [https://github.com/laderast/magic-of-markdown](https://github.com/laderast/magic-of-markdown)
 
-And this markdown cheatsheet is always handy if you forget how to do things. https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf
+And this markdown cheatsheet is always handy if you forget how to do things. [https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
 
 Try changing the `about.md` or the `cv.md` files with your info (remember to click the edit pencil button). When you're done, click the "commit your changes" button at the bottom to save your changes.
 
@@ -176,13 +176,13 @@ This is a great opportunity to practice some Markdown!
 ### Such as headers
 
 and **bolding**
-* lists 
+* lists
 
 When you're done, commit the file into GitHub and confirm that your new blog post is up. You can also delete the sample blog posts so they don't show up on your page.
 
 ## 9. Modifying the Menu
 
-If you take a look at the example site, https://biodata-club.github.io/githubPagesTutorial/, you'll notice a menu side bar on the left. Near the bottom left corner, you'll see links to other pages on the site. We can add and remove these links and their respective pages fairly easily.
+If you take a look at the example site, [https://biodata-club.github.io/githubPagesTutorial/](https://biodata-club.github.io/githubPagesTutorial/), you'll notice a menu side bar on the left. Near the bottom left corner, you'll see links to other pages on the site. We can add and remove these links and their respective pages fairly easily.
 
 Looking at the files in your main directory (which are the contents from `websiteFiles/`), the menu is automatically generated based on the files that end in `.md` (except `LICENSE.md` and `README.md`) and have a little YAML entry. If you take a look, you can see `about.md` and `cv.md`. Similarly named links should be in the menu.
 
@@ -225,7 +225,7 @@ At some point, you will want to make a local copy of your website. This can be h
 
 At the top level of your repo, click the "Clone and Download" button and select "Open in GitHub Desktop".
 
-I like to have a code specific folder to store my code, such as "c:/code/" (windows) or "~/Code/" (Mac/Linux) so that it has a permanent place to stay. So create a folder that is somewhere permanent and save your repo into that folder. Your "code" folder should now have a local copy of your repo.
+I like to have a code specific folder to store my code, such as "C:/code/" (Windows) or "~/Code/" (Mac/Linux) so that it has a permanent place to stay. So create a folder that is somewhere permanent and save your repo into that folder. Your "code" folder should now have a local copy of your repo.
 
 You can now make changes on your local machine. Edit the files in a text editor such as [Sublime Text](https://www.sublimetext.com) and save them.
 
@@ -233,9 +233,9 @@ To update local files you've changed and push them to your GitHub, you will need
 
 Keep in mind: if you changed and added files on the website version, you will need to sync your own local repository to see those changes there.
 
-A handy video intro to GitHub Desktop: https://www.youtube.com/watch?v=kFix7UDJ7LA
+A handy video intro to GitHub Desktop: [https://www.youtube.com/watch?v=kFix7UDJ7LA](https://www.youtube.com/watch?v=kFix7UDJ7LA)
 
-For more info on using GitHub Desktop: https://help.github.com/desktop/guides/getting-started/
+For more info on using GitHub Desktop: [https://help.github.com/desktop/guides/getting-started/](https://help.github.com/desktop/guides/getting-started/)
 
 ## More Things to Do with your GitHub Page
 
@@ -266,9 +266,9 @@ If you have a file named `index.md` in your folder, your link will be automatica
 
 ## Using Custom Themes
 
-You might not like the layout of your page (that's fine). You can transfer your markdown files into a different Jekyll Theme and use that as the basis for your website. 
+You might not like the layout of your page (that's fine). You can transfer your markdown files into a different Jekyll Theme and use that as the basis for your website.
 
-http://jekyllthemes.org
+[http://jekyllthemes.org](http://jekyllthemes.org)
 
 Many of these themes you can directly fork and make a website directly, much like this tutorial. Note that you'll have to copy over any files that you've changed (such as the `cv.md` files and your blog posts in the `_posts` folder) to get them to show up in your new theme.
 
@@ -290,7 +290,7 @@ height="300">
 
 The world is now your oyster now that you've mastered GitHub Pages and Markdown.
 
-+ GitHub Pages: https://pages.github.com
-+ Jekyll Themes: http://jekyllthemes.org
++ GitHub Pages: [https://pages.github.com](https://pages.github.com)
++ Jekyll Themes: [http://jekyllthemes.org](http://jekyllthemes.org)
 
-Markdown is not only useful for GitHub Pages. One markdown document can be translated into PDFs, HTML Slides, Word Documents, and a bunch of other formats. We talk about some of the uses here: http://laderast.github.io/magic-of-markdown/
+Markdown is not only useful for GitHub Pages. One markdown document can be translated into PDFs, HTML Slides, Word Documents, and a bunch of other formats. We talk about some of the uses here: [http://laderast.github.io/magic-of-markdown/](http://laderast.github.io/magic-of-markdown/)

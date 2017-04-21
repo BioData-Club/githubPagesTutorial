@@ -348,6 +348,8 @@ Basically, you will need to make a new branch called "gh-pages" that contains yo
 
 Note that once you have your "gh-pages" branch, you can change the jekyll theme under "Settings". GitHub Pages offers a number of built-in Jekyll Themes that might be a good place to start.
 
+You can also serve pages out of your `master` branch or the `master/docs` folder if you don't want to manage separate branches. You can change this under the `Settings` tab for your repo.
+
 Way more info can be found here: https://help.github.com/articles/creating-a-github-pages-site-with-the-jekyll-theme-chooser/
 
 https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/

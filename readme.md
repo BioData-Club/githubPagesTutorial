@@ -26,7 +26,7 @@ If you want to use GitHub Desktop when setting up your website, open up [`interm
 
 Our easier version is available in [`easy/tutorialEasyVersion.pdf`](https://github.com/BioData-Club/githubPagesTutorial/blob/master/easy/tutorialEasyVersion.pdf) (you can download this file) and also at: https://biodata-club.github.io/githubPagesTutorial/easy/ It only requires a laptop and a GitHub account.
 
-During the workshop, be sure to use your Post-Its if you're stuck and one of us will help you.
+During the workshop, be sure to use your Post-Its if you're stuck, and one of us will help you.
 
 ## Attribution
 

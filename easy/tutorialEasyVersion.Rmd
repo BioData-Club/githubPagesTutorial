@@ -44,8 +44,8 @@ You may want to spend a little time learning how to use markdown, as it'll make 
 
   1) Fork the Repository
   2) Rename the Repo(sitory)
-  3) Look at your pretty website!
-  4) Change and Personalize Your Site with YAML
+  3) Change and Personalize Your Site with YAML
+  4) Look at your pretty website!
   5) Start Editing Content with Markdown 
   6) Adding Links
   7) Adding Images
@@ -62,11 +62,7 @@ Log into your GitHub account. Now go to the website repo: https://github.com/lad
 
 Now click the "Settings" tab on your repository. Change your repository name to USERNAME.github.io, where USERNAME is your GitHub Login.
 
-## 3. Check out your Basic Website
-
-You're ready to go! Now check out your initialized website at https://USERNAME.github.io. We'll start customizing it!
-
-## 4. Editing the Name of Your Webpage and Customizing
+## 3. Editing the Name of Your Webpage and Customizing
 
 The first step to customizing your webpage is to edit the blog's name to include your information. To do this, you will be editing a YAML file, which is a simple configuration file. You'll open the `_config.yml` file in the root level of your repo to update the info here. In GitHub, click on the `_config.yml` file, and then edit it (it's the pencil button on the right). Change the *title*, *tagline*, *description*, *url*, and *name* fields to suit you.
 
@@ -86,7 +82,9 @@ author:
 
 After you have edited your `_config.yml` file, click the green "Commit your changes" button at the bottom of the page. That will save the file to your repository.
 
-Reload your website to see your changes. It may take a little bit, since GitHub needs to rebuild your page in the background.
+## 4. Check out your Basic Website
+
+You're ready to go! Now check out your initialized website at https://USERNAME.github.io. We'll start customizing it!
 
 ## 5a. Make content using Markdown 
 

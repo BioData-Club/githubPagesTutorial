@@ -11,18 +11,12 @@ With a text editor and GitHub Desktop, you can create a personal website on GitH
 ## What You Need to Start
 
 + [A GitHub Account](https://github.com/join?source=header-home)
-+ [GitHub Desktop](https://desktop.github.com/)
-+ Text Editor (we prefer [Sublime](https://www.sublimetext.com), but [Atom](https://atom.io) is also good)
-+ File Manager (to rename files)
-    + Windows Explorer or Mac OS Finder (whatever you have)
 + Something to say
 + Pictures (optional)
 
 You may want to spend a little time learning how to use markdown, as it'll make putting your content together faster. There is a tutorial here: [The Magic of Markdown](https://github.com/laderast/magic-of-markdown/blob/master/magic-of-markdown.md)
 
 ## Getting Started
-
-If you want to use GitHub Desktop when setting up your website, open up [`intermediate/githubPagesTutorial.Rmd`](https://github.com/BioData-Club/githubPagesTutorial/blob/master/intermediate/githubPagesTutorial.Rmd). Then it's just a matter of following directions. 
 
 Our easier version is available in [`easy/tutorialEasyVersion.Rmd`](https://github.com/BioData-Club/githubPagesTutorial/blob/master/easy/tutorialEasyVersion.Rmd). It only requires a laptop and a GitHub account.
 

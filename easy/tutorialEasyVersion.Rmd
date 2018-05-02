@@ -3,7 +3,7 @@ title: "Github Pages Tutorial - Easy Version"
 author: "Ted Laderas (laderast@ohsu.edu), Eric Leung, and Robin Champieux"
 date: "4/21/2017"
 output:
-  pdf_document
+  html_document
 ---
 
 ## What is GitHub Pages?

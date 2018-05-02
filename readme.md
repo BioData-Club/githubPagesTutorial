@@ -18,7 +18,7 @@ You may want to spend a little time learning how to use markdown, as it'll make 
 
 ## Getting Started
 
-Our easier version is available in [`easy/tutorialEasyVersion.Rmd`](https://github.com/BioData-Club/githubPagesTutorial/blob/master/easy/tutorialEasyVersion.Rmd). It only requires a laptop and a GitHub account.
+The workshop starts here: [gitHub Pages Tutorial](http://biodata-club.github.io/githubPagesTutorial) It only requires a laptop and a GitHub account.
 
 During the workshop, be sure to use your Post-Its if you're stuck, and one of us will help you.
 

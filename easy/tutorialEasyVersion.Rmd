@@ -115,7 +115,9 @@ owner:
 
 After you have edited your `_config.yml` file, click the green "Commit your changes" button at the bottom of the page. That will save the file to your repository.
 
-Reload your website to see your changes. It may take a little bit, since GitHub needs to rebuild your page in the background.
+## 4. Check out your Basic Website
+
+You're ready to go! Now check out your initialized website at https://USERNAME.github.io. We'll start customizing it!
 
 ## 3. Check out your Basic Website
 

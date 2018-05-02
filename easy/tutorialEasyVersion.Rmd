@@ -38,55 +38,88 @@ You don't need to know how to code or know HTML to setup a GitHub page. We'll le
 + Something to say
 + Pictures (optional)
 
-You may want to spend a little time learning how to use markdown, as it'll make putting your content together faster. There is a tutorial here: [The Magic of Markdown](https://laderast.github.io/magic-of-markdown/) that will get you started with the basics.
+You may want to spend a little time learning how to use markdown, as it'll make putting your content together faster. There is a tutorial here: [The Magic of Markdown](https://laderast.github.io/magic-of-markdown/) that will get you started with the basics. We'll give you enough 
 
 ## What We're Going to do Today
 
-  1) Fork the Repository
-  2) Rename the Repo(sitory)
-  3) Look at your pretty website!
-  4) Change and Personalize Your Site with YAML
-  5) Start Editing Content with Markdown 
-  6) Adding Links
-  7) Adding Images
-  8) Add a Blog Post
-  9) Customize your sidebar with new links
-  10) Look at your pretty website!
-  11) Make a local copy for easier editing
+  1. Fork the Repository
+  1. Rename the Repo(sitory)
+  1. Change and Personalize Your Site with YAML
+  1. Look at your pretty website!
+  1. Start Editing Content with Markdown 
+  1. Adding Links
+  1. Adding Images
+  1. Add a Blog Post
+  1. Customize your menubar with new links
+  1. Look at your pretty website!
+  1. Make a local copy for easier editing
 
 ## 1. Fork the Repo(istory) From GitHub
 
-Log into your GitHub account. Now go to the website repo: https://github.com/laderast/websiteFiles and click the "Fork" button on the top right of the webpage.
+Log into your GitHub account. Now go to the website repo: https://github.com/laderast/academic_site_workshop and click the "Fork" button on the top right of the webpage.
+
+When we fork, we're basically copying the files into our own version of the repository. Basically we'll use the above link as the basis of our website.
+
+## A little bit about Jekyll
+
+Jekyll is what's known as a static site generator. It will build a website from simpler text files that are in Markdown. Markdown is much easier to work with, since you don't have to worry about adding HTML tags and accidently breaking it. 
+
+The other nice thing about Jekyll is that it will integrate things like Google Analytics, Tags, and search into your website structure.
+
+Jekyll is built into GitHub, so we just need to edit the files in our repository to have it automatically build it.
+
+Here's a little picture of the file structure of our website and what we'll do to modify it.
+
+![Jekyll_structure](images/jekyll_structure.png)
 
 ## 2. Rename the Repo
 
 Now click the "Settings" tab on your repository. Change your repository name to USERNAME.github.io, where USERNAME is your GitHub Login.
 
-## 3. Check out your Basic Website
+## 3. Editing the Name of Your Webpage and Customizing
 
-You're ready to go! Now check out your initialized website at https://USERNAME.github.io. We'll start customizing it!
+The first step to customizing your webpage is to edit the blog's name to include your information. To do this, you will be editing a YAML file, which is a simple configuration file. You'll open the `_config.yml` file in the root level of your repo to update the info here. In GitHub, click on the `_config.yml` file, and then edit it (it's the pencil button on the right). 
 
-## 4. Editing the Name of Your Webpage and Customizing
+Change the *title*, *name*, *bio*, *email*, and the social media fields (such as *twitter*, *linkedin*) with your information.
 
-The first step to customizing your webpage is to edit the blog's name to include your information. To do this, you will be editing a YAML file, which is a simple configuration file. You'll open the `_config.yml` file in the root level of your repo to update the info here. In GitHub, click on the `_config.yml` file, and then edit it (it's the pencil button on the right). Change the *title*, *tagline*, *description*, *url*, and *name* fields to suit you.
+Just make you that you don't modify anything below `#DO NOT EDIT BEYOND THIS POINT`.
 
-For now, don't modify anything below `#You don't need to modify below this line`.
-
-Here's an example `_config.yml` file.
+Here's an example `_config.yml` file. Don't worry about the avatar and the logo file for right now.
 
 ```
-# Personalize your website info here
-title:            Anew Guy
-tagline:          'Professional Website for Anew Guy'
-description:      'Website and Blog for Anew Guy'
-url:              https://anewguy.github.io
-author:
-  name:           'Anew Guy'
+# Site wide configuration
+
+title: Academic Website of Ted Laderas
+locale: en_US
+logo: # filename of a logo image that has been placed into your images directory
+
+# Enter the following platform usernames if you would like for them to appear on your site.
+owner:
+  name: Ted Laderas
+  avatar: bio-photo.jpg
+  bio: "This is a sample Jekyll academic website."
+  email: laderast@ohsu.edu
+  # Do not include the @ symbol in your Twitter username
+  twitter: laderast
+  linkedin: #username
+  github: laderast
+  orcid: # ID Number (ex. 0000-0000-0000-0000)
+  researchgate: #username
+  mendeley: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    scholar: #id
 ```
 
 After you have edited your `_config.yml` file, click the green "Commit your changes" button at the bottom of the page. That will save the file to your repository.
 
 Reload your website to see your changes. It may take a little bit, since GitHub needs to rebuild your page in the background.
+
+## 3. Check out your Basic Website
+
+You're ready to go! Now check out your initialized website at https://USERNAME.github.io. We'll start customizing it!
 
 ## 5a. Make content using Markdown 
 
@@ -104,7 +137,7 @@ Way more info about writing markdown can be found here: https://github.com/lader
 
 And this markdown cheatsheet is always handy if you forget how to do things. https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf
 
-Try changing the `about.md` or the `cv.md` files with your info (remember to click the edit pencil button). When you're done, click the "commit your changes" button at the bottom to save your changes.
+Try changing the `cv.md` file with your info (remember to click the edit pencil button). When you're done, click the green "commit your changes" button at the bottom to save your changes.
 
 Reload your website to make sure that the changes worked. It sometimes takes a little time for GitHub to update the files, so be patient if they don't appear immediately.
 
@@ -112,7 +145,7 @@ Reload your website to make sure that the changes worked. It sometimes takes a l
 
 Links, or URLs and web addresses, on a website can link to other webpages.
 
-In your `about.md` file, you can add a link by enclosing the text for your link in square brackets (`[text here]`) and the underlying link in parentheses (`(http://link-here.com)`) right next to it. So altogether, it should look like this: 
+In your `index.md` file, you can add a link by enclosing the text for your link in square brackets (`[text here]`) and the underlying link in parentheses (`(http://link-here.com)`) right next to it. So altogether, it should look like this: 
 
 ```
 [link to Google](https://www.google.com)
@@ -128,7 +161,7 @@ https://www.google.com
 
 https://www.google.com
 
-Try adding some links to your `about.md` file, such as to your GitHub or Twitter accounts. Click the "Commit Your Changes" button when you're done.
+Try adding some links to your `index.md` file, such as to your GitHub or Twitter accounts. Click the "Commit Your Changes" button when you're done.
 
 ## 7a. Let's Add an Image (from an external website)
 
@@ -151,12 +184,12 @@ The output looks like this:
 
 ## 7b. Uploading images to your website and using them
 
-Where do you put images you've made? You can make an `images/` folder in your repository. To do this, we will need to create a dummy file, because git requires a file in a new folder. Click on the "Add a New File" button in the root directory and type in `images/dummyFile`. Commit this dummy file into the repo and you should now see that the `images/` folder has been created.
+Where do you put images you've made? In the `images/` folder. Upload a photo of yourself to this folder (Click the "Upload Files" button), and make sure it is named `bio-photo.jpg`. 
 
-Now you can upload images into to that directory using the `Upload Files` button. Then you can refer to them like this:
+Now you can upload images into to that directory using the `Upload Files` button. Then you can refer to them in your website like this:
 
 ```
-![](/images/jetpacktocat.png)
+![](/images/bio-photo.jpg)
 ```
 
 ## 8. Add a Blog Entry
@@ -167,8 +200,12 @@ Each post you make should be in the form `YEAR-MONTH-DAY-title.md`, so for examp
 
 ```
 ---
-layout: post
+layout: blog
 title: Awesome Blog Post
+excerpt: "Why you should read my website"
+tags: [intro, beginner, jekyll, tutorial]
+comments: true
+category: blog
 ---
 
 Text for your post goes here.
@@ -179,6 +216,8 @@ This is a great opportunity to practice some Markdown!
 
 and **bolding**
 * lists 
+
+Note there's lots of fields you can change: `title`, `excerpt`, `tags`, and `category`. `category` is the most important field, since your posts can either be a `presentation` or a `blog` depending on this field. 
 
 When you're done, commit the file into GitHub and confirm that your new blog post is up. You can also delete the sample blog posts so they don't show up on your page.
 
@@ -213,7 +252,30 @@ Which will show up like this:
 + Cooking
 + GitHub Class
 
+Then you'll have to edit the `_data/navigation.yml` file to add that menu item. Here's my `navigation.yml` file:
+
+```
+# Site navigation links
+- title: Home
+  url: /
+
+- title: Presentations
+  url: /presentations/
+
+- title: CV
+  url: /cv/
+
+- title: Blog
+  url: /blog/
+
+- title: Workshops
+  url: /workshops/
+```
+Add another `title`/`url` entry for coursework. We named our file `coursework.md`, so the `url` will be `/coursework/`. 
+
 When you're done, commit and load your website again. Confirm that "Coursework" shows up in the menu sidebar. Neat!
+
+If you don't want your blog to show up, you can delete its `title`/`url` entry here. 
 
 ## 10. Look at your pretty website!
 
@@ -245,7 +307,7 @@ The following are things you might like to do to your website.
 
 ## Lots of ways to customize your site
 
-Look at the `Readme.md` file in the root level of your repo for more tweaks to you can make to the appearance of your blog. You can change the color scheme, put the sidebar on the right.
+Look at the `Readme.md` file in the root level of your repo for more tweaks to you can make to the appearance of your blog. 
 
 You'll have to modify some `.html` files to do these changes, but it should be pretty painless to do.
 
@@ -274,7 +336,7 @@ http://jekyllthemes.org
 
 Many of these themes you can directly fork and make a website directly, much like this tutorial. Note that you'll have to copy over any files that you've changed (such as the `cv.md` files and your blog posts in the `_posts` folder) to get them to show up in your new theme.
 
-Unfortunately, the themes are not like plugins. Which means you will have to cut and paste your content into the new forked repo. They (the GitHub Pages people) are trying to make this process more streamlined.
+Unfortunately, the themes are not like plugins. Which means you will have to cut and paste your content into the new forked repo. They (the GitHub Pages people) are trying to make this process more streamlined. The big issue is that the `_config.yml` files have different fields and options depending on the template.
 
 ## If you know HTML
 

@@ -1,7 +1,7 @@
 ---
 title: "Github Pages Tutorial - Easy Version"
 author: "Ted Laderas (laderast@ohsu.edu), Eric Leung, and Robin Champieux"
-date: "4/21/2017"
+date: "`r Sys.Date()`"
 output:
   html_document
 ---
@@ -27,7 +27,7 @@ Because GitHub pages is compatible with Markdown, we'll be using Markdown format
 
 We're going to build a personal webpage which will live at USERNAME.github.io, and have blogging features and will be easily customizable. 
 
-There's an example of a blog here: https://biodata-club.github.io/githubPagesTutorial/
+There's an example of a blog here: https://laderast.github.io/academic_site_workshop/
 
 ## What You Need for Today
 
@@ -353,6 +353,10 @@ height="300">
 <img src="https://octodex.github.com/images/jetpacktocat.png" height="300">
 
 ## Useful Links
+
+Here is where you can read more about customizing the `jekyll-academic` template that your site is based on:
+
+https://ncsu-libraries.github.io/jekyll-academic-docs/
 
 The world is now your oyster now that you've mastered GitHub Pages and Markdown.
 

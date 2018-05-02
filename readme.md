@@ -24,4 +24,4 @@ During the workshop, be sure to use your Post-Its if you're stuck, and one of us
 
 ## Attribution
 
-This tutorial uses Mark Otto's [Hyde Template for Jekyll](http://hyde.getpoole.com) with some simple modifications to make it Jeykll 3.0 Compatible
+This tutorial uses the [jekyll-academic template](https://github.com/NCSU-Libraries/jekyll-academic) with some simple modifications to make it Jeykll 3.0 Compatible

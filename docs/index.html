@@ -125,6 +125,35 @@ $(document).ready(function () {
 
 </div>
 
+<div id="TOC">
+<ul>
+<li><a href="#what-is-github-pages">What is GitHub Pages?</a></li>
+<li><a href="#why-github-pages">Why GitHub Pages?</a></li>
+<li><a href="#our-goal-for-the-day">Our goal for the day</a></li>
+<li><a href="#what-you-need-for-today">What You Need for Today</a></li>
+<li><a href="#what-were-going-to-do-today">What We’re Going to do Today</a></li>
+<li><a href="#fork-the-repoistory-from-github">Fork the Repo(istory) From GitHub</a></li>
+<li><a href="#a-little-bit-about-jekyll">A little bit about Jekyll</a></li>
+<li><a href="#rename-the-repo">Rename the Repo</a></li>
+<li><a href="#editing-the-name-of-your-webpage-and-customizing">Editing the Name of Your Webpage and Customizing</a></li>
+<li><a href="#check-out-your-basic-website">Check out your Basic Website</a></li>
+<li><a href="#make-content-using-markdown">Make content using Markdown</a></li>
+<li><a href="#markdown-basics">Markdown Basics</a></li>
+<li><a href="#lets-add-some-links">Let’s Add Some Links</a></li>
+<li><a href="#lets-add-an-image-from-an-external-website">Let’s Add an Image (from an external website)</a></li>
+<li><a href="#uploading-images-to-your-website-and-using-them">Uploading images to your website and using them</a></li>
+<li><a href="#add-a-blog-entry">Add a Blog Entry</a></li>
+<li><a href="#modifying-the-menu">Modifying the Menu</a></li>
+<li><a href="#look-at-your-pretty-website">Look at your pretty website!</a></li>
+<li><a href="#make-a-local-copy-using-github-desktop-optional">Make a local copy using GitHub Desktop (optional)</a></li>
+<li><a href="#more-things-to-do-with-your-github-page">More Things to Do with your GitHub Page</a></li>
+<li><a href="#lots-of-ways-to-customize-your-site">Lots of ways to customize your site</a></li>
+<li><a href="#making-folder-links-using-a-index.md-file">Making folder links using a <code>Index.md</code> file</a></li>
+<li><a href="#using-custom-themes">Using Custom Themes</a></li>
+<li><a href="#if-you-know-html">If you know HTML</a></li>
+<li><a href="#useful-links">Useful Links</a></li>
+</ul>
+</div>
 
 <div id="what-is-github-pages" class="section level2">
 <h2>What is GitHub Pages?</h2>
@@ -174,7 +203,7 @@ $(document).ready(function () {
 </ol>
 </div>
 <div id="fork-the-repoistory-from-github" class="section level2">
-<h2>1. Fork the Repo(istory) From GitHub</h2>
+<h2>Fork the Repo(istory) From GitHub</h2>
 <p>Log into your GitHub account. Now go to the website repo: <a href="https://github.com/laderast/academic_site_workshop" class="uri">https://github.com/laderast/academic_site_workshop</a> and click the “Fork” button on the top right of the webpage.</p>
 <p>When we fork, we’re basically copying the files into our own version of the repository. Basically we’ll use the above link as the basis of our website.</p>
 </div>
@@ -190,11 +219,11 @@ $(document).ready(function () {
 </div>
 </div>
 <div id="rename-the-repo" class="section level2">
-<h2>2. Rename the Repo</h2>
+<h2>Rename the Repo</h2>
 <p>Now click the “Settings” tab on your repository. Change your repository name to USERNAME.github.io, where USERNAME is your GitHub Login.</p>
 </div>
 <div id="editing-the-name-of-your-webpage-and-customizing" class="section level2">
-<h2>3. Editing the Name of Your Webpage and Customizing</h2>
+<h2>Editing the Name of Your Webpage and Customizing</h2>
 <p>The first step to customizing your webpage is to edit the blog’s name to include your information. To do this, you will be editing a YAML file, which is a simple configuration file. You’ll open the <code>_config.yml</code> file in the root level of your repo to update the info here. In GitHub, click on the <code>_config.yml</code> file, and then edit it (it’s the pencil button on the right).</p>
 <p>Change the <em>title</em>, <em>name</em>, <em>bio</em>, <em>email</em>, and the social media fields (such as <em>twitter</em>, <em>linkedin</em>) with your information.</p>
 <p>Just make you that you don’t modify anything below <code>#DO NOT EDIT BEYOND THIS POINT</code>.</p>
@@ -226,21 +255,17 @@ owner:
 <p>After you have edited your <code>_config.yml</code> file, click the green “Commit your changes” button at the bottom of the page. That will save the file to your repository.</p>
 </div>
 <div id="check-out-your-basic-website" class="section level2">
-<h2>4. Check out your Basic Website</h2>
+<h2>Check out your Basic Website</h2>
 <p>You’re ready to go! Now check out your initialized website at <a href="https://USERNAME.github.io" class="uri">https://USERNAME.github.io</a>. We’ll start customizing it!</p>
 </div>
-<div id="check-out-your-basic-website-1" class="section level2">
-<h2>3. Check out your Basic Website</h2>
-<p>You’re ready to go! Now check out your initialized website at <a href="https://USERNAME.github.io" class="uri">https://USERNAME.github.io</a>. We’ll start customizing it!</p>
-</div>
-<div id="a.-make-content-using-markdown" class="section level2">
-<h2>5a. Make content using Markdown</h2>
+<div id="make-content-using-markdown" class="section level2">
+<h2>Make content using Markdown</h2>
 <p>We’ll be adding our content by using Markdown Files. Markdown is a lightweight way to format text that is much easier to manipulate than working with HTML files directly.</p>
 <p>GitHub has a “translation engine” that will transform and format your Markdown files for the website to make them browser-friendly.</p>
 <p>This means you can concentrate on making content rather than obsessing about every little site detail. There are lots of designers who are good at that if you aren’t.</p>
 </div>
-<div id="b.-markdown-basics" class="section level2">
-<h2>5b. Markdown Basics</h2>
+<div id="markdown-basics" class="section level2">
+<h2>Markdown Basics</h2>
 <p>A markdown file generally has an <code>.md</code> or a <code>.markdown</code> extension. Let’s open the file in <code>_posts/2012-02-07-example-content.md</code> in GitHub and you’ll see some examples of how to write in markdown.</p>
 <p>Way more info about writing markdown can be found here: <a href="https://github.com/laderast/magic-of-markdown" class="uri">https://github.com/laderast/magic-of-markdown</a></p>
 <p>And this markdown cheatsheet is always handy if you forget how to do things. <a href="https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf" class="uri">https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf</a></p>
@@ -248,7 +273,7 @@ owner:
 <p>Reload your website to make sure that the changes worked. It sometimes takes a little time for GitHub to update the files, so be patient if they don’t appear immediately.</p>
 </div>
 <div id="lets-add-some-links" class="section level2">
-<h2>6. Let’s Add Some Links</h2>
+<h2>Let’s Add Some Links</h2>
 <p>Links, or URLs and web addresses, on a website can link to other webpages.</p>
 <p>In your <code>index.md</code> file, you can add a link by enclosing the text for your link in square brackets (<code>[text here]</code>) and the underlying link in parentheses (<code>(http://link-here.com)</code>) right next to it. So altogether, it should look like this:</p>
 <pre><code>[link to Google](https://www.google.com)</code></pre>
@@ -258,8 +283,8 @@ owner:
 <p><a href="https://www.google.com" class="uri">https://www.google.com</a></p>
 <p>Try adding some links to your <code>index.md</code> file, such as to your GitHub or Twitter accounts. Click the “Commit Your Changes” button when you’re done.</p>
 </div>
-<div id="a.-lets-add-an-image-from-an-external-website" class="section level2">
-<h2>7a. Let’s Add an Image (from an external website)</h2>
+<div id="lets-add-an-image-from-an-external-website" class="section level2">
+<h2>Let’s Add an Image (from an external website)</h2>
 <p>You can also add images to your webpage. GitHub has a mascot called Octocat, so let’s add a picture of Octocat to our site. Doing this is very similar to adding a link, you just need to add an exclamation mark in front of the square bracket and parentheses. Try adding a picture to your <code>cv.md</code> or your <code>about.md</code> files!</p>
 <p>An example looks like this</p>
 <pre><code>![Jetpacktocat](https://octodex.github.com/images/jetpacktocat.png)</code></pre>
@@ -271,14 +296,14 @@ owner:
 <p><strong>Note</strong>: The text within the square brackets should be a description of the image. Providing this is good practice, and facilitates compliance with accessibility technologies (such as screen readers), but you can leave it blank and the following would also work.</p>
 <pre><code>![](https://octodex.github.com/images/jetpacktocat.png)</code></pre>
 </div>
-<div id="b.-uploading-images-to-your-website-and-using-them" class="section level2">
-<h2>7b. Uploading images to your website and using them</h2>
+<div id="uploading-images-to-your-website-and-using-them" class="section level2">
+<h2>Uploading images to your website and using them</h2>
 <p>Where do you put images you’ve made? In the <code>images/</code> folder. Upload a photo of yourself to this folder (Click the “Upload Files” button), and make sure it is named <code>bio-photo.jpg</code>.</p>
 <p>Now you can upload images into to that directory using the <code>Upload Files</code> button. Then you can refer to them in your website like this:</p>
-<pre><code>![](/images/bio-photo.jpg)</code></pre>
+<pre><code>![](images/bio-photo.jpg)</code></pre>
 </div>
 <div id="add-a-blog-entry" class="section level2">
-<h2>8. Add a Blog Entry</h2>
+<h2>Add a Blog Entry</h2>
 <p>Your current repository is set up for blog entries. In your root folder, you’ll find another folder named <code>_posts</code>. This is where you’ll put new blog posts. Open this folder and create a new file.</p>
 <p>Each post you make should be in the form <code>YEAR-MONTH-DAY-title.md</code>, so for example, <code>2017-04-21-github-pages-tutorial.md</code>. You’ll also want a <code>.yaml</code>-like text near the top.</p>
 <pre><code>---
@@ -297,9 +322,9 @@ Text for your post goes here.</code></pre>
 <p>When you’re done, commit the file into GitHub and confirm that your new blog post is up. You can also delete the sample blog posts so they don’t show up on your page.</p>
 </div>
 <div id="modifying-the-menu" class="section level2">
-<h2>9. Modifying the Menu</h2>
-<p>If you take a look at the example site, <a href="https://biodata-club.github.io/githubPagesTutorial/" class="uri">https://biodata-club.github.io/githubPagesTutorial/</a>, you’ll notice a menu side bar on the left. Near the bottom left corner, you’ll see links to other pages on the site. We can add and remove these links and their respective pages fairly easily.</p>
-<p>Looking at the files in your main directory (which are the contents from <code>websiteFiles/</code>), the menu is automatically generated based on the files that end in <code>.md</code> (except <code>LICENSE.md</code> and <code>README.md</code>) and have a little YAML entry. If you take a look, you can see <code>about.md</code> and <code>cv.md</code>. Similarly named links should be in the menu.</p>
+<h2>Modifying the Menu</h2>
+<p>If you take a look at the example site, <a href="https://laderast.github.io/academic_site_workshop/" class="uri">https://laderast.github.io/academic_site_workshop/</a> , you’ll notice a menu side bar on the left. Near the bottom left corner, you’ll see links to other pages on the site. We can add and remove these links and their respective pages fairly easily.</p>
+<p>Looking at the files in your main directory (which are the contents from <code>academic_site_workshop/</code>), the menu is generated based on the files that end in <code>.md</code> (except <code>LICENSE.md</code> and <code>README.md</code>) and have a little YAML entry. If you take a look, you can see <code>index.md</code> and <code>cv.md</code>. Similarly named links should be in the menu.</p>
 <p>To create a new static page that shows up in your sidebar, you need to have the following at the top and just change the text for the title.</p>
 <pre><code>---
 layout: page
@@ -333,17 +358,17 @@ Text for your page goes here.</code></pre>
 
 - title: Workshops
   url: /workshops/</code></pre>
-<p>Add another <code>title</code>/<code>url</code> entry for coursework. We named our file <code>coursework.md</code>, so the <code>url</code> will be <code>/coursework/</code>.</p>
-<p>When you’re done, commit and load your website again. Confirm that “Coursework” shows up in the menu sidebar. Neat!</p>
+<p>Add another <code>title</code>/<code>url</code> entry for coursework. We named our file <code>coursework.md</code>, so the <code>url</code> will be <code>/coursework/</code>. Make sure that you start out with <code>-</code>.</p>
+<p>When you’re done, commit and load your website again. Confirm that “Coursework” shows up in the menubar. Neat!</p>
 <p>If you don’t want your blog to show up, you can delete its <code>title</code>/<code>url</code> entry here.</p>
 </div>
 <div id="look-at-your-pretty-website" class="section level2">
-<h2>10. Look at your pretty website!</h2>
+<h2>Look at your pretty website!</h2>
 <p>Congratulations on making it this far! This is just the start of your adventures with GitHub Pages. Learn some more Markdown, and have fun adding blog pages.</p>
 <p>Have fun!</p>
 </div>
 <div id="make-a-local-copy-using-github-desktop-optional" class="section level2">
-<h2>11. Make a local copy using GitHub Desktop (optional)</h2>
+<h2>Make a local copy using GitHub Desktop (optional)</h2>
 <p>At some point, you will want to make a local copy of your website. This can be handy when you have multiple documents to edit, since editing on the website can be a bit of a pain.</p>
 <p>At the top level of your repo, click the “Clone and Download” button and select “Open in GitHub Desktop”.</p>
 <p>I like to have a code specific folder to store my code, such as “c:/code/” (windows) or “~/Code/” (Mac/Linux) so that it has a permanent place to stay. So create a folder that is somewhere permanent and save your repo into that folder. Your “code” folder should now have a local copy of your repo.</p>

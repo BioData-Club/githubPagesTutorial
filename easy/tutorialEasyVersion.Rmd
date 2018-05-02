@@ -3,7 +3,8 @@ title: "Github Pages Tutorial - Easy Version"
 author: "Ted Laderas (laderast@ohsu.edu), Eric Leung, and Robin Champieux"
 date: "`r Sys.Date()`"
 output:
-  html_document
+  html_document:
+    toc: true
 ---
 
 ## What is GitHub Pages?
@@ -54,7 +55,7 @@ You may want to spend a little time learning how to use markdown, as it'll make 
   1. Look at your pretty website!
   1. Make a local copy for easier editing
 
-## 1. Fork the Repo(istory) From GitHub
+## Fork the Repo(istory) From GitHub
 
 Log into your GitHub account. Now go to the website repo: https://github.com/laderast/academic_site_workshop and click the "Fork" button on the top right of the webpage.
 
@@ -72,11 +73,11 @@ Here's a little picture of the file structure of our website and what we'll do t
 
 ![Jekyll_structure](images/jekyll_structure.png)
 
-## 2. Rename the Repo
+## Rename the Repo
 
 Now click the "Settings" tab on your repository. Change your repository name to USERNAME.github.io, where USERNAME is your GitHub Login.
 
-## 3. Editing the Name of Your Webpage and Customizing
+## Editing the Name of Your Webpage and Customizing
 
 The first step to customizing your webpage is to edit the blog's name to include your information. To do this, you will be editing a YAML file, which is a simple configuration file. You'll open the `_config.yml` file in the root level of your repo to update the info here. In GitHub, click on the `_config.yml` file, and then edit it (it's the pencil button on the right). 
 
@@ -115,15 +116,11 @@ owner:
 
 After you have edited your `_config.yml` file, click the green "Commit your changes" button at the bottom of the page. That will save the file to your repository.
 
-## 4. Check out your Basic Website
+## Check out your Basic Website
 
 You're ready to go! Now check out your initialized website at https://USERNAME.github.io. We'll start customizing it!
 
-## 3. Check out your Basic Website
-
-You're ready to go! Now check out your initialized website at https://USERNAME.github.io. We'll start customizing it!
-
-## 5a. Make content using Markdown 
+## Make content using Markdown 
 
 We'll be adding our content by using Markdown Files. Markdown is a lightweight way to format text that is much easier to manipulate than working with HTML files directly.
 
@@ -131,7 +128,7 @@ GitHub has a "translation engine" that will transform and format your Markdown f
 
 This means you can concentrate on making content rather than obsessing about every little site detail. There are lots of designers who are good at that if you aren't.
 
-## 5b. Markdown Basics
+## Markdown Basics
 
 A markdown file generally has an `.md` or a `.markdown` extension. Let's open the file in `_posts/2012-02-07-example-content.md` in GitHub and you'll see some examples of how to write in markdown.
 
@@ -143,7 +140,7 @@ Try changing the `cv.md` file with your info (remember to click the edit pencil 
 
 Reload your website to make sure that the changes worked. It sometimes takes a little time for GitHub to update the files, so be patient if they don't appear immediately.
 
-## 6. Let's Add Some Links
+## Let's Add Some Links
 
 Links, or URLs and web addresses, on a website can link to other webpages.
 
@@ -165,7 +162,7 @@ https://www.google.com
 
 Try adding some links to your `index.md` file, such as to your GitHub or Twitter accounts. Click the "Commit Your Changes" button when you're done.
 
-## 7a. Let's Add an Image (from an external website)
+## Let's Add an Image (from an external website)
 
 You can also add images to your webpage. GitHub has a mascot called Octocat, so let's add a picture of Octocat to our site. Doing this is very similar to adding a link, you just need to add an exclamation mark in front of the square bracket and parentheses. Try adding a picture to your `cv.md` or your `about.md` files!
 
@@ -184,17 +181,17 @@ The output looks like this:
 ![](https://octodex.github.com/images/jetpacktocat.png)
 ```
 
-## 7b. Uploading images to your website and using them
+## Uploading images to your website and using them
 
 Where do you put images you've made? In the `images/` folder. Upload a photo of yourself to this folder (Click the "Upload Files" button), and make sure it is named `bio-photo.jpg`. 
 
 Now you can upload images into to that directory using the `Upload Files` button. Then you can refer to them in your website like this:
 
 ```
-![](/images/bio-photo.jpg)
+![](images/bio-photo.jpg)
 ```
 
-## 8. Add a Blog Entry
+## Add a Blog Entry
 
 Your current repository is set up for blog entries. In your root folder, you'll find another folder named `_posts`. This is where you'll put new blog posts. Open this folder and create a new file.
 
@@ -223,11 +220,11 @@ Note there's lots of fields you can change: `title`, `excerpt`, `tags`, and `cat
 
 When you're done, commit the file into GitHub and confirm that your new blog post is up. You can also delete the sample blog posts so they don't show up on your page.
 
-## 9. Modifying the Menu
+## Modifying the Menu
 
-If you take a look at the example site, https://biodata-club.github.io/githubPagesTutorial/, you'll notice a menu side bar on the left. Near the bottom left corner, you'll see links to other pages on the site. We can add and remove these links and their respective pages fairly easily.
+If you take a look at the example site, https://laderast.github.io/academic_site_workshop/ , you'll notice a menu side bar on the left. Near the bottom left corner, you'll see links to other pages on the site. We can add and remove these links and their respective pages fairly easily.
 
-Looking at the files in your main directory (which are the contents from `websiteFiles/`), the menu is automatically generated based on the files that end in `.md` (except `LICENSE.md` and `README.md`) and have a little YAML entry. If you take a look, you can see `about.md` and `cv.md`. Similarly named links should be in the menu.
+Looking at the files in your main directory (which are the contents from `academic_site_workshop/`), the menu is generated based on the files that end in `.md` (except `LICENSE.md` and `README.md`) and have a little YAML entry. If you take a look, you can see `index.md` and `cv.md`. Similarly named links should be in the menu.
 
 To create a new static page that shows up in your sidebar, you need to have the following at the top and just change the text for the title.
 
@@ -273,19 +270,19 @@ Then you'll have to edit the `_data/navigation.yml` file to add that menu item. 
 - title: Workshops
   url: /workshops/
 ```
-Add another `title`/`url` entry for coursework. We named our file `coursework.md`, so the `url` will be `/coursework/`. 
+Add another `title`/`url` entry for coursework. We named our file `coursework.md`, so the `url` will be `/coursework/`. Make sure that you start out with `-`.
 
-When you're done, commit and load your website again. Confirm that "Coursework" shows up in the menu sidebar. Neat!
+When you're done, commit and load your website again. Confirm that "Coursework" shows up in the menubar. Neat!
 
 If you don't want your blog to show up, you can delete its `title`/`url` entry here. 
 
-## 10. Look at your pretty website!
+## Look at your pretty website!
 
 Congratulations on making it this far! This is just the start of your adventures with GitHub Pages. Learn some more Markdown, and have fun adding blog pages.
 
 Have fun! 
 
-## 11. Make a local copy using GitHub Desktop (optional)
+## Make a local copy using GitHub Desktop (optional)
 
 At some point, you will want to make a local copy of your website. This can be handy when you have multiple documents to edit, since editing on the website can be a bit of a pain.
 

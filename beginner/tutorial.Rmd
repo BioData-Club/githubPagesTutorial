@@ -1,6 +1,6 @@
 ---
-title: "Github Pages Tutorial - Easy Version"
-author: "Ted Laderas (laderast@ohsu.edu), Eric Leung, and Robin Champieux"
+title: "Github Pages Tutorial"
+author: "Ted Laderas (laderast@ohsu.edu), Eric Leung, Robin Champieux, Eric Earl, and Marijane White"
 date: "`r Sys.Date()`"
 output:
   html_document:
@@ -20,37 +20,37 @@ We'll mostly cover the personal website for today.
 
 ## Why GitHub Pages?
 
-GitHub is a highly dependable webhost, and you get one personal webpage account for free. 
+GitHub is a highly dependable webhost, and you get one personal webpage account for free.
 
 Because GitHub pages is compatible with Markdown, we'll be using Markdown formatting to build our webpage.
 
 ## Our goal for the day
 
-We're going to build a personal webpage which will live at USERNAME.github.io, and have blogging features and will be easily customizable. 
+We're going to build a personal webpage which will live at USERNAME.github.io, and have blogging features and will be easily customizable.
 
 There's an example of a blog here: https://laderast.github.io/academic_site_workshop/
 
 ## What You Need for Today
 
-You don't need to know how to code or know HTML to setup a GitHub page. We'll learn some Markdown basics so that we can add content to our site. Here's what you need.
+You don't need to know how to code or know HTML to setup a GitHub Page. We'll learn some Markdown basics so that we can add content to our site. Here's what you need.
 
 + A Laptop
 + [A GitHub Account](https://github.com/join)
-+ Something to say
++ Content like your bio, C.V., or a blog post
 + Pictures (optional)
 
 You may want to spend a little time learning how to use markdown, as it'll make putting your content together faster. There is a tutorial here: [The Magic of Markdown](https://laderast.github.io/magic-of-markdown/) that will get you started with the basics. We'll give you just enough to get started.
 
 ## What We're Going to do Today
 
-  1. Fork the Repository
-  1. Rename the Repo(sitory)
-  1. Change and Personalize Your Site with YAML
+  1. Fork the repository
+  1. Rename the repo(sitory)
+  1. Change and personalize Your website with YAML
   1. Look at your new website!
-  1. Start Editing Content with Markdown 
-  1. Add Links
-  1. Add Images
-  1. Add a Blog Post
+  1. Start editing content with Markdown
+  1. Add links
+  1. Add images
+  1. Add a blog post
   1. Customize your menu bar with new links
   1. Look at your even better website!
   1. Make a local copy for easier editing
@@ -59,11 +59,11 @@ You may want to spend a little time learning how to use markdown, as it'll make 
 
 Log into your GitHub account. Now go to the website repo: https://github.com/laderast/academic_site_workshop and click the "Fork" button on the top right of the webpage.
 
-When we "fork" we're copying the files into our own version of the repository. Basically we'll use the above link as the basis of our website.
+When we fork we're copying the files into our own version of the repository. Basically we'll use the above link as the basis of our website.
 
 ## A little bit about Jekyll
 
-Jekyll is what's known as a static site generator. It will build a website from simpler text files that are in Markdown. Markdown is much easier to work with, since you don't have to worry about adding HTML tags and accidentally breaking it. 
+Jekyll is what's known as a static site generator. It will build a website from simpler text files that are in Markdown. Markdown is much easier to work with, since you don't have to worry about adding HTML tags and accidentally breaking it.
 
 The other nice thing about Jekyll is that it will integrate things like Google Analytics, Tags, and search into your website structure.
 
@@ -79,13 +79,13 @@ Now click the "Settings" tab on your repository. Change your repository name to 
 
 ## Editing the Name of Your Webpage and Customizing
 
-The first step to customizing your webpage is to edit the blog's name to include your information. To do this, you will be editing a YAML file, which is a simple configuration file. You'll open the `_config.yml` file in the root level of your repo to update the info here. In GitHub, click on the `_config.yml` file, and then edit it (it's the pencil button on the right). 
+The first step to customizing your webpage is to edit the blog's name to include your information. To do this, you will be editing a YAML file, which is a simple configuration file. You'll open the `_config.yml` file in the root level of your repo to update the info here. In GitHub, click on the `_config.yml` file, and then edit it (it's the pencil button on the right).
 
 Change the *title*, *name*, *bio*, *email*, and the social media fields (such as *twitter*, *linkedin*) with your information.
 
 Just make you that you don't modify anything below `#DO NOT EDIT BEYOND THIS POINT`.
 
-Here's an example `_config.yml` file. Don't worry about the avatar and the logo file for right now.
+Here's an example `_config.yml` file. Don't worry about the avatar and the logo file for right now. # symbols are the beginning of "comments" which are ignored in YAML files to the right of the # symbol.
 
 ```
 # Site wide configuration
@@ -114,17 +114,17 @@ owner:
     scholar: #id
 ```
 
-After you have edited your `_config.yml` file, click the green "Commit your changes" button at the bottom of the page. That will save the file to your repository.
+After you have edited your `_config.yml` file, click the green "Commit changes" button at the bottom of the page. That will save the file to your repository.
 
 ## Look at your new website!
 
 You're ready to go! Now check out your initialized website at https://USERNAME.github.io. We'll start customizing it!
 
-## Make content using Markdown 
+## Make content using Markdown
 
 We'll be adding our content by using Markdown Files. Markdown is a lightweight way to format text that is much easier to manipulate than working with HTML files directly.
 
-GitHub has a "translation engine" that will transform and format your Markdown files for the website to make them browser-friendly. 
+GitHub has a "translation engine" that will transform and format your Markdown files for the website to make them browser-friendly.
 
 This means you can concentrate on making content rather than obsessing about every little site detail.
 
@@ -136,7 +136,7 @@ Way more info about writing markdown can be found here: https://github.com/lader
 
 And this markdown cheatsheet is always handy if you forget how to do things. https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf
 
-Try changing the `cv.md` file with your info (remember to click the edit pencil button). When you're done, click the green "commit your changes" button at the bottom to save your changes.
+Try changing the `cv.md` file with your info (remember to click the edit pencil button). When you're done, click the green "Commit changes" button at the bottom to save your changes.
 
 Reload your website to make sure that the changes worked. It sometimes takes a little time for GitHub to update the files, so be patient if they don't appear immediately.
 
@@ -144,7 +144,7 @@ Reload your website to make sure that the changes worked. It sometimes takes a l
 
 Links, or URLs and web addresses, on a website can link to other webpages.
 
-In your `index.md` file, you can add a link by enclosing the text for your link in square brackets (`[text here]`) and the underlying link in parentheses (`(http://link-here.com)`) right next to it. So altogether, it should look like this: 
+In your `index.md` file, you can add a link by enclosing the text for your link in square brackets (`[text here]`) and the underlying link in parentheses (`(http://link-here.com)`) right next to it. So altogether, it should look like this:
 
 ```
 [link to Google](https://www.google.com)
@@ -166,12 +166,12 @@ Try adding some links to your `index.md` file, such as to your GitHub or Twitter
 
 You can also add images to your webpage. GitHub has a mascot called Octocat, so let's add a picture of Octocat to our site. Doing this is very similar to adding a link, you just need to add an exclamation mark in front of the square bracket and parentheses. Try adding a picture to your `cv.md` file!
 
-An example looks like this 
+An example looks like this
 
 ```
 ![Jetpacktocat](https://octodex.github.com/images/jetpacktocat.png)
 ```
-The output looks like this: 
+The output looks like this:
 
 ![Jetpacktocat](https://octodex.github.com/images/jetpacktocat.png)
 
@@ -183,7 +183,7 @@ The output looks like this:
 
 ## Uploading images to your website and using them
 
-Where do you put images you've made? In the `images/` folder. Upload a photo of yourself to this folder (Click the "Upload Files" button), and make sure it is named `bio-photo.jpg`. 
+Where do you put images you've made? In the `images/` folder. Upload a photo of yourself to this folder (Click the "Upload Files" button), and make sure it is named `bio-photo.jpg`.
 
 Now you can upload images into to that directory using the `Upload Files` button. Then you can refer to them in your website like this:
 
@@ -199,7 +199,7 @@ Each post you make should be in the form `YEAR-MONTH-DAY-title.md`, so for examp
 
 ```
 ---
-layout: blog
+layout: post
 title: Awesome Blog Post
 excerpt: "Why you should read my website"
 tags: [intro, beginner, jekyll, tutorial]
@@ -214,9 +214,10 @@ This is a great opportunity to practice some Markdown!
 ### Such as headers
 
 and **bolding**
-* lists 
 
-Note there's lots of fields you can change: `title`, `excerpt`, `tags`, and `category`. `category` is the most important field, since your posts can either be a `presentation` or a `blog` depending on this field. 
+* and lists
+
+Note there's lots of fields you can change: `title`, `excerpt`, `tags`, and `category`. `category` is the most important field, since your posts can either be a `presentation` or a `blog` depending on this field.
 
 When you're done, commit the file into GitHub and confirm that your new blog post is up. You can also delete the sample blog posts so they don't show up on your page.
 
@@ -274,13 +275,13 @@ Add another `title`/`url` entry for coursework. We named our file `coursework.md
 
 When you're done, commit and load your website again. Confirm that "Coursework" shows up in the menubar. Neat!
 
-If you don't want your blog to show up, you can delete its `title`/`url` entry here. 
+If you don't want your blog to show up, you can delete its `title`/`url` entry here.
 
 ## Look at your even better website!
 
 Congratulations on making it this far! This is just the start of your adventures with GitHub Pages. Learn some more Markdown and change and add what you want from now on.
 
-Have fun! 
+Have fun!
 
 ## Make a local copy using GitHub Desktop (optional)
 
@@ -306,7 +307,7 @@ The following are things you might like to do to your website.
 
 ## Lots of ways to customize your site
 
-Look at the `Readme.md` file in the root level of your repo for more tweaks to you can make to the appearance of your blog. 
+Look at the `Readme.md` file in the root level of your repo for more tweaks to you can make to the appearance of your blog.
 
 You'll have to modify some `.html` files to do these changes.
 
@@ -316,7 +317,7 @@ You might be wondering how to generate links that work with a trailing slash. Fo
 
 The first step is to create a folder with that name, in the top level folder. For example, I just created a folder called `DS4BS` in my `laderast.github.io` folder. Then I just created a file called `index.md` in that folder.
 
-Be sure to add the correct YAML at the start of your `index.md` file: 
+Be sure to add the correct YAML at the start of your `index.md` file:
 
 ```
 ---
@@ -329,7 +330,7 @@ If you have a file named `index.md` in your folder, your link will be automatica
 
 ## Using Custom Themes
 
-You might not like the layout of your page (that's fine). You can transfer your markdown files into a different Jekyll Theme and use that as the basis for your website. 
+You might not like the layout of your page (that's fine). You can transfer your markdown files into a different Jekyll Theme and use that as the basis for your website.
 
 http://jekyllthemes.org
 
@@ -344,7 +345,7 @@ The cool thing about markdown is that you can add HTML directly into markdown fi
 For example, maybe we want a smaller version of octocat. We can just add an `<img>` tag to customize it, and change the `height` attribute.
 
 ```
-<img src="https://octodex.github.com/images/jetpacktocat.png" 
+<img src="https://octodex.github.com/images/jetpacktocat.png"
 height="300">
 ```
 <img src="https://octodex.github.com/images/jetpacktocat.png" height="300">
@@ -361,3 +362,19 @@ The website world is your oyster now that you've mastered GitHub Pages and Markd
 + Jekyll Themes: http://jekyllthemes.org
 
 Markdown is not only useful for GitHub Pages. One markdown document can be translated into PDFs, HTML Slides, Word Documents, and a bunch of other formats. We talk about some of the uses here: http://laderast.github.io/magic-of-markdown/
+
+## Cheatsheet
+
+The ordered shortlist/cheatsheet for today's workshop:
+
++ Fork and rename the repo
++ Edit `_config.yml`
++ Update `cv.md`
++ Add links to `index.md`
++ Add an "external" image
++ Upload new bio photo `images/bio-photo.jpg`
++ Add blog post
++ Add a new menu option:
+  + Write `coursework.md`
+  + Update `_data/navigation.yml`
++ Clone to Desktop

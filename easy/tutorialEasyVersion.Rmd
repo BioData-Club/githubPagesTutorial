@@ -39,35 +39,35 @@ You don't need to know how to code or know HTML to setup a GitHub page. We'll le
 + Something to say
 + Pictures (optional)
 
-You may want to spend a little time learning how to use markdown, as it'll make putting your content together faster. There is a tutorial here: [The Magic of Markdown](https://laderast.github.io/magic-of-markdown/) that will get you started with the basics. We'll give you enough 
+You may want to spend a little time learning how to use markdown, as it'll make putting your content together faster. There is a tutorial here: [The Magic of Markdown](https://laderast.github.io/magic-of-markdown/) that will get you started with the basics. We'll give you just enough to get started.
 
 ## What We're Going to do Today
 
   1. Fork the Repository
   1. Rename the Repo(sitory)
   1. Change and Personalize Your Site with YAML
-  1. Look at your pretty website!
+  1. Look at your new website!
   1. Start Editing Content with Markdown 
-  1. Adding Links
-  1. Adding Images
+  1. Add Links
+  1. Add Images
   1. Add a Blog Post
-  1. Customize your menubar with new links
-  1. Look at your pretty website!
+  1. Customize your menu bar with new links
+  1. Look at your even better website!
   1. Make a local copy for easier editing
 
-## Fork the Repo(istory) From GitHub
+## Fork the Repo(sitory) From GitHub
 
 Log into your GitHub account. Now go to the website repo: https://github.com/laderast/academic_site_workshop and click the "Fork" button on the top right of the webpage.
 
-When we fork, we're basically copying the files into our own version of the repository. Basically we'll use the above link as the basis of our website.
+When we "fork" we're copying the files into our own version of the repository. Basically we'll use the above link as the basis of our website.
 
 ## A little bit about Jekyll
 
-Jekyll is what's known as a static site generator. It will build a website from simpler text files that are in Markdown. Markdown is much easier to work with, since you don't have to worry about adding HTML tags and accidently breaking it. 
+Jekyll is what's known as a static site generator. It will build a website from simpler text files that are in Markdown. Markdown is much easier to work with, since you don't have to worry about adding HTML tags and accidentally breaking it. 
 
 The other nice thing about Jekyll is that it will integrate things like Google Analytics, Tags, and search into your website structure.
 
-Jekyll is built into GitHub, so we just need to edit the files in our repository to have it automatically build it.
+Jekyll is built into GitHub, so we just need to edit the files in our repository to have GitHub automatically build the webpage.
 
 Here's a little picture of the file structure of our website and what we'll do to modify it.
 
@@ -126,11 +126,11 @@ We'll be adding our content by using Markdown Files. Markdown is a lightweight w
 
 GitHub has a "translation engine" that will transform and format your Markdown files for the website to make them browser-friendly. 
 
-This means you can concentrate on making content rather than obsessing about every little site detail. There are lots of designers who are good at that if you aren't.
+This means you can concentrate on making content rather than obsessing about every little site detail.
 
 ## Markdown Basics
 
-A markdown file generally has an `.md` or a `.markdown` extension. Let's open the file in `_posts/2012-02-07-example-content.md` in GitHub and you'll see some examples of how to write in markdown.
+A markdown file generally has a `.md` or a `.markdown` extension. Let's open the file in `_posts/2012-02-07-example-content.md` in GitHub and you'll see some examples of how to write in markdown.
 
 Way more info about writing markdown can be found here: https://github.com/laderast/magic-of-markdown
 
@@ -164,7 +164,7 @@ Try adding some links to your `index.md` file, such as to your GitHub or Twitter
 
 ## Let's Add an Image (from an external website)
 
-You can also add images to your webpage. GitHub has a mascot called Octocat, so let's add a picture of Octocat to our site. Doing this is very similar to adding a link, you just need to add an exclamation mark in front of the square bracket and parentheses. Try adding a picture to your `cv.md` or your `about.md` files!
+You can also add images to your webpage. GitHub has a mascot called Octocat, so let's add a picture of Octocat to our site. Doing this is very similar to adding a link, you just need to add an exclamation mark in front of the square bracket and parentheses. Try adding a picture to your `cv.md` file!
 
 An example looks like this 
 

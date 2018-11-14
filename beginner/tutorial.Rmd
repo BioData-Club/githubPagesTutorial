@@ -83,13 +83,15 @@ Now click the "Settings" tab on your repository. Change your repository name to 
 
 ## Editing the Name of Your Webpage and Customizing
 
-The first step to customizing your webpage is to edit the blog's name to include your information. To do this, you will be editing a YAML file, which is a simple configuration file. You'll open the `_config.yml` file in the root level of your repo to update the info here. In GitHub, click on the `_config.yml` file, and then edit it (it's the pencil button on the right).
+The first step to creating your website is to edit the information in the YAML file.  This is a simple configuration file where some important settings for your site are stored. 
 
-Change the *title*, *name*, *bio*, *email*, and the social media fields (such as *twitter*, *linkedin*) with your information.
+You'll find the `_config.yml` file in the root (parent) level of your repo. In GitHub, click on the `_config.yml` file.  To edit it click on the pencil button on the right.
+
+Update the *title*, *name*, *bio*, *email*, and the social media fields (such as *twitter*, *linkedin*) with your information.
 
 Just make you that you don't modify anything below `#DO NOT EDIT BEYOND THIS POINT`.
 
-Here's an example `_config.yml` file. Don't worry about the avatar and the logo file for right now. # symbols are the beginning of "comments" which are ignored in YAML files to the right of the # symbol.
+Here's an example `_config.yml` file. Don't worry about the avatar and the logo file for right now. # symbols are the beginning of comments.  The text to the right of the # symbol is ignored.  
 
 ```
 # Site wide configuration
@@ -118,19 +120,19 @@ owner:
     scholar: #id
 ```
 
-After you have edited your `_config.yml` file, click the green "Commit changes" button at the bottom of the page. That will save the file to your repository.
+After you have edited your `_config.yml` file, click the green "Commit changes" button at the bottom of the page, which will save the file to your repository.
 
 ## Look at your new website!
 
-You're ready to go! Now check out your initialized website at https://USERNAME.github.io. We'll start customizing it!
+You're ready to go! Now check out your initialized website at https://USERNAME.github.io. Next we'll start customizing it!
 
 ## Make content using Markdown
 
 We'll be adding our content by using Markdown Files. Markdown is a lightweight way to format text that is much easier to manipulate than working with HTML files directly.
 
-GitHub has a "translation engine" that will transform and format your Markdown files for the website to make them browser-friendly.
+GitHub has a "translation engine" that will transform and format your Markdown files for the website, making them browser friendly.
 
-This means you can concentrate on making content rather than obsessing about every little site detail.
+This means you can concentrate on making content rather than obsessing about every little site detail!
 
 ## Markdown Basics
 

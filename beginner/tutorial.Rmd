@@ -1,6 +1,6 @@
 ---
 title: "Github Pages Tutorial"
-author: "Ted Laderas (laderast@ohsu.edu), Eric Leung, Robin Champieux, Eric Earl, and Marijane White"
+author: "Ted Laderas (laderast@ohsu.edu), Eric Leung, Robin Champieux (champieu@ohsu.edu), Eric Earl, and Marijane White"
 date: "`r Sys.Date()`"
 output:
   html_document:
@@ -20,15 +20,15 @@ We'll mostly cover the personal website for today.
 
 ## Why GitHub Pages?
 
-GitHub is a highly dependable webhost, and you get one personal webpage account for free.
+GitHub is a highly dependable webhost, and you get one personal webpage account for free.  Plus, if you move institutions, your website can travel with you.
 
 Because GitHub pages is compatible with Markdown, we'll be using Markdown formatting to build our webpage.
 
 ## Our goal for the day
 
-We're going to build a personal webpage which will live at USERNAME.github.io, and have blogging features and will be easily customizable.
+We're going to build a personal webpage which will live at USERNAME.github.io.  The template we're using, Jekyll Academic, was developed by [NCSU Libraries](https://www.lib.ncsu.edu/) and is tailored specifically for use within the academic community.  
 
-There's an example of a blog here: https://laderast.github.io/academic_site_workshop/
+There is a live example of the template here: https://laderast.github.io/academic_site_workshop/.  You'll be able to customize many elements, including the color scheme.
 
 ## What You Need for Today
 
@@ -36,16 +36,20 @@ You don't need to know how to code or know HTML to setup a GitHub Page. We'll le
 
 + A Laptop
 + [A GitHub Account](https://github.com/join)
-+ Content like your bio, C.V., or a blog post
-+ Pictures (optional)
+
+Additionally, it will be helpful to have the following on hand so you can add content to your new website:
+
++ A short bio
++ A headshot or another image that represents your professional interests
++ A C.V. or resume
 
 You may want to spend a little time learning how to use markdown, as it'll make putting your content together faster. There is a tutorial here: [The Magic of Markdown](https://laderast.github.io/magic-of-markdown/) that will get you started with the basics. We'll give you just enough to get started.
 
 ## What We're Going to do Today
 
   1. Fork the repository
-  1. Rename the repo(sitory)
-  1. Change and personalize Your website with YAML
+  1. Rename the repository
+  1. Change and personalize your website with YAML
   1. Look at your new website!
   1. Start editing content with Markdown
   1. Add links
@@ -59,11 +63,11 @@ You may want to spend a little time learning how to use markdown, as it'll make 
 
 Log into your GitHub account. Now go to the website repo: https://github.com/laderast/academic_site_workshop and click the "Fork" button on the top right of the webpage.
 
-When we fork we're copying the files into our own version of the repository. Basically we'll use the above link as the basis of our website.
+When we fork we're copying the files into our own repository.  We'll use the copy as the building block for your new website. 
 
 ## A little bit about Jekyll
 
-Jekyll is what's known as a static site generator. It will build a website from simpler text files that are in Markdown. Markdown is much easier to work with, since you don't have to worry about adding HTML tags and accidentally breaking it.
+Jekyll is what's known as a static site generator. It will build a website from simple text files that are in Markdown. Markdown is much easier to work with, since you don't have to worry about adding HTML tags and accidentally breaking it.
 
 The other nice thing about Jekyll is that it will integrate things like Google Analytics, Tags, and search into your website structure.
 

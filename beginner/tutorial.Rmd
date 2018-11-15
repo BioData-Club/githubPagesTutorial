@@ -1,6 +1,6 @@
 ---
 title: "Github Pages Tutorial"
-author: "Ted Laderas (laderast@ohsu.edu), Eric Leung, Robin Champieux (champieu@ohsu.edu), Eric Earl, and Marijane White"
+author: "Ted Laderas (laderast@ohsu.edu), Eric Leung (leunge@ohsu.edu), Robin Champieux (champieu@ohsu.edu), Eric Earl (earl@ohsu.edu), and Marijane White (whimar@ohsu.edu)"
 date: "`r Sys.Date()`"
 output:
   html_document:

@@ -9,9 +9,9 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Ted Laderas (laderast@ohsu.edu), Eric Leung, Robin Champieux, Eric Earl, and Marijane White" />
+<meta name="author" content="Ted Laderas (laderast@ohsu.edu), Eric Leung (leunge@ohsu.edu), Robin Champieux (champieu@ohsu.edu), Eric Earl (earl@ohsu.edu), and Marijane White (whimar@ohsu.edu)" />
 
-<meta name="date" content="2018-11-12" />
+<meta name="date" content="2018-11-15" />
 
 <title>Github Pages Tutorial</title>
 
@@ -123,8 +123,8 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Github Pages Tutorial</h1>
-<h4 class="author"><em>Ted Laderas (<a href="mailto:laderast@ohsu.edu">laderast@ohsu.edu</a>), Eric Leung, Robin Champieux, Eric Earl, and Marijane White</em></h4>
-<h4 class="date"><em>2018-11-12</em></h4>
+<h4 class="author"><em>Ted Laderas (<a href="mailto:laderast@ohsu.edu">laderast@ohsu.edu</a>), Eric Leung (<a href="mailto:leunge@ohsu.edu">leunge@ohsu.edu</a>), Robin Champieux (<a href="mailto:champieu@ohsu.edu">champieu@ohsu.edu</a>), Eric Earl (<a href="mailto:earl@ohsu.edu">earl@ohsu.edu</a>), and Marijane White (<a href="mailto:whimar@ohsu.edu">whimar@ohsu.edu</a>)</em></h4>
+<h4 class="date"><em>2018-11-15</em></h4>
 
 </div>
 
@@ -140,9 +140,9 @@ $(document).ready(function () {
 <li><a href="#rename-the-repo">Rename the Repo</a></li>
 <li><a href="#editing-the-name-of-your-webpage-and-customizing">Editing the Name of Your Webpage and Customizing</a></li>
 <li><a href="#look-at-your-new-website">Look at your new website!</a></li>
-<li><a href="#make-content-using-markdown">Make content using Markdown</a></li>
+<li><a href="#make-content-using-markdown">Make Content Using Markdown</a></li>
 <li><a href="#markdown-basics">Markdown Basics</a></li>
-<li><a href="#lets-add-some-links">Let’s Add Some Links</a></li>
+<li><a href="#lets-update-your-home-page-index-and-add-some-links">Let’s Update Your Home Page (Index) And Add Some Links</a></li>
 <li><a href="#lets-add-an-image-from-an-external-website">Let’s Add an Image (from an external website)</a></li>
 <li><a href="#uploading-images-to-your-website-and-using-them">Uploading images to your website and using them</a></li>
 <li><a href="#add-a-blog-entry">Add a Blog Entry</a></li>
@@ -171,13 +171,13 @@ $(document).ready(function () {
 </div>
 <div id="why-github-pages" class="section level2">
 <h2>Why GitHub Pages?</h2>
-<p>GitHub is a highly dependable webhost, and you get one personal webpage account for free.</p>
+<p>GitHub is a highly dependable webhost, and you get one personal webpage account for free. Plus, if you move institutions, your website can travel with you.</p>
 <p>Because GitHub pages is compatible with Markdown, we’ll be using Markdown formatting to build our webpage.</p>
 </div>
 <div id="our-goal-for-the-day" class="section level2">
 <h2>Our goal for the day</h2>
-<p>We’re going to build a personal webpage which will live at USERNAME.github.io, and have blogging features and will be easily customizable.</p>
-<p>There’s an example of a blog here: <a href="https://laderast.github.io/academic_site_workshop/" class="uri">https://laderast.github.io/academic_site_workshop/</a></p>
+<p>We’re going to build a personal webpage which will live at USERNAME.github.io. The template we’re using, Jekyll Academic, was developed by <a href="https://www.lib.ncsu.edu/">NCSU Libraries</a> and is tailored specifically for use within the academic community.</p>
+<p>There is a live example of the template here: <a href="https://laderast.github.io/academic_site_workshop/" class="uri">https://laderast.github.io/academic_site_workshop/</a>. You’ll be able to customize many elements, including the color scheme.</p>
 </div>
 <div id="what-you-need-for-today" class="section level2">
 <h2>What You Need for Today</h2>
@@ -185,8 +185,12 @@ $(document).ready(function () {
 <ul>
 <li>A Laptop</li>
 <li><a href="https://github.com/join">A GitHub Account</a></li>
-<li>Content like your bio, C.V., or a blog post</li>
-<li>Pictures (optional)</li>
+</ul>
+<p>Additionally, it will be helpful to have the following on hand so you can add content to your new website:</p>
+<ul>
+<li>A short bio</li>
+<li>A headshot or another image that represents your professional interests</li>
+<li>A C.V. or resume</li>
 </ul>
 <p>You may want to spend a little time learning how to use markdown, as it’ll make putting your content together faster. There is a tutorial here: <a href="https://laderast.github.io/magic-of-markdown/">The Magic of Markdown</a> that will get you started with the basics. We’ll give you just enough to get started.</p>
 </div>
@@ -194,8 +198,8 @@ $(document).ready(function () {
 <h2>What We’re Going to do Today</h2>
 <ol style="list-style-type: decimal">
 <li>Fork the repository</li>
-<li>Rename the repo(sitory)</li>
-<li>Change and personalize Your website with YAML</li>
+<li>Rename the repository</li>
+<li>Change and personalize your website with YAML</li>
 <li>Look at your new website!</li>
 <li>Start editing content with Markdown</li>
 <li>Add links</li>
@@ -209,11 +213,11 @@ $(document).ready(function () {
 <div id="fork-the-repository-from-github" class="section level2">
 <h2>Fork the Repo(sitory) From GitHub</h2>
 <p>Log into your GitHub account. Now go to the website repo: <a href="https://github.com/laderast/academic_site_workshop" class="uri">https://github.com/laderast/academic_site_workshop</a> and click the “Fork” button on the top right of the webpage.</p>
-<p>When we fork we’re copying the files into our own version of the repository. Basically we’ll use the above link as the basis of our website.</p>
+<p>When we fork we’re copying the files into our own repository. We’ll use the copy as the building block for your new website.</p>
 </div>
 <div id="a-little-bit-about-jekyll" class="section level2">
 <h2>A little bit about Jekyll</h2>
-<p>Jekyll is what’s known as a static site generator. It will build a website from simpler text files that are in Markdown. Markdown is much easier to work with, since you don’t have to worry about adding HTML tags and accidentally breaking it.</p>
+<p>Jekyll is what’s known as a static site generator. It will build a website from simple text files that are in Markdown. Markdown is much easier to work with, since you don’t have to worry about adding HTML tags and accidentally breaking it.</p>
 <p>The other nice thing about Jekyll is that it will integrate things like Google Analytics, Tags, and search into your website structure.</p>
 <p>Jekyll is built into GitHub, so we just need to edit the files in our repository to have GitHub automatically build the webpage.</p>
 <p>Here’s a little picture of the file structure of our website and what we’ll do to modify it.</p>
@@ -228,10 +232,11 @@ $(document).ready(function () {
 </div>
 <div id="editing-the-name-of-your-webpage-and-customizing" class="section level2">
 <h2>Editing the Name of Your Webpage and Customizing</h2>
-<p>The first step to customizing your webpage is to edit the blog’s name to include your information. To do this, you will be editing a YAML file, which is a simple configuration file. You’ll open the <code>_config.yml</code> file in the root level of your repo to update the info here. In GitHub, click on the <code>_config.yml</code> file, and then edit it (it’s the pencil button on the right).</p>
-<p>Change the <em>title</em>, <em>name</em>, <em>bio</em>, <em>email</em>, and the social media fields (such as <em>twitter</em>, <em>linkedin</em>) with your information.</p>
+<p>The first step to creating your website is to edit the information in the YAML file. This is a simple configuration file where some important settings for your site are stored.</p>
+<p>You’ll find the <code>_config.yml</code> file in the root (parent) level of your repo. In GitHub, click on the <code>_config.yml</code> file. To edit it click on the pencil button on the right.</p>
+<p>Update the <em>title</em>, <em>name</em>, <em>bio</em>, <em>email</em>, and the social media fields (such as <em>twitter</em>, <em>linkedin</em>) with your information.</p>
 <p>Just make you that you don’t modify anything below <code>#DO NOT EDIT BEYOND THIS POINT</code>.</p>
-<p>Here’s an example <code>_config.yml</code> file. Don’t worry about the avatar and the logo file for right now. # symbols are the beginning of “comments” which are ignored in YAML files to the right of the # symbol.</p>
+<p>Here’s an example <code>_config.yml</code> file. Don’t worry about the avatar and the logo file for right now. # symbols are the beginning of comments. The text to the right of the # symbol is ignored.</p>
 <pre><code># Site wide configuration
 
 title: Academic Website of Ted Laderas
@@ -256,36 +261,32 @@ owner:
     analytics:
     verify:
     scholar: #id</code></pre>
-<p>After you have edited your <code>_config.yml</code> file, click the green “Commit changes” button at the bottom of the page. That will save the file to your repository.</p>
+<p>After you have edited your <code>_config.yml</code> file, click the green “Commit changes” button at the bottom of the page, which will save the file to your repository.</p>
 </div>
 <div id="look-at-your-new-website" class="section level2">
 <h2>Look at your new website!</h2>
-<p>You’re ready to go! Now check out your initialized website at <a href="https://USERNAME.github.io" class="uri">https://USERNAME.github.io</a>. We’ll start customizing it!</p>
+<p>You’re ready to go! Now check out your initialized website at <a href="https://USERNAME.github.io" class="uri">https://USERNAME.github.io</a>. Next we’ll start customizing it!</p>
 </div>
 <div id="make-content-using-markdown" class="section level2">
-<h2>Make content using Markdown</h2>
+<h2>Make Content Using Markdown</h2>
 <p>We’ll be adding our content by using Markdown Files. Markdown is a lightweight way to format text that is much easier to manipulate than working with HTML files directly.</p>
-<p>GitHub has a “translation engine” that will transform and format your Markdown files for the website to make them browser-friendly.</p>
-<p>This means you can concentrate on making content rather than obsessing about every little site detail.</p>
+<p>GitHub has a “translation engine” that will transform and format your Markdown files for the website, making them browser friendly.</p>
+<p>This means you can concentrate on making content rather than obsessing about every little site detail!</p>
 </div>
 <div id="markdown-basics" class="section level2">
 <h2>Markdown Basics</h2>
-<p>A markdown file generally has a <code>.md</code> or a <code>.markdown</code> extension. Let’s open the file in <code>_posts/2012-02-07-example-content.md</code> in GitHub and you’ll see some examples of how to write in markdown.</p>
+<p>A markdown file generally has a <code>.md</code> or a <code>.markdown</code> extension. It uses plain text formatting syntax, which is pretty easy to learn. For example, bulleted lists are denoted with an asterix before each line item and subheadings with one or more hash marks.</p>
+<p>This markdown cheatsheet is handy to learn how to do things. <a href="https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf" class="uri">https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf</a></p>
 <p>Way more info about writing markdown can be found here: <a href="https://github.com/laderast/magic-of-markdown" class="uri">https://github.com/laderast/magic-of-markdown</a></p>
-<p>And this markdown cheatsheet is always handy if you forget how to do things. <a href="https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf" class="uri">https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf</a></p>
-<p>Try changing the <code>cv.md</code> file with your info (remember to click the edit pencil button). When you’re done, click the green “Commit changes” button at the bottom to save your changes.</p>
+<p>Try editing the <code>cv.md</code> file with your info (remember to click the edit pencil button). When you’re done, click the green “Commit changes” button at the bottom to save your changes.</p>
 <p>Reload your website to make sure that the changes worked. It sometimes takes a little time for GitHub to update the files, so be patient if they don’t appear immediately.</p>
 </div>
-<div id="lets-add-some-links" class="section level2">
-<h2>Let’s Add Some Links</h2>
-<p>Links, or URLs and web addresses, on a website can link to other webpages.</p>
-<p>In your <code>index.md</code> file, you can add a link by enclosing the text for your link in square brackets (<code>[text here]</code>) and the underlying link in parentheses (<code>(http://link-here.com)</code>) right next to it. So altogether, it should look like this:</p>
+<div id="lets-update-your-home-page-index-and-add-some-links" class="section level2">
+<h2>Let’s Update Your Home Page (Index) And Add Some Links</h2>
+<p>Your <code>index.md</code> file controls your website’s front matter. You’ll want to update it with your short bio and links to relevent projects and interests. For example, take a look at <a href="https://rchampieux.github.io/">Robin’s website</a>.</p>
+<p>Her bio and project list links out to other websites. It’s easy to do this in markdown. Add a link by enclosing the text for your link in square brackets (<code>[text here]</code>) and the underlying link in parentheses (<code>(http://link-here.com)</code>) right next to it (no spaces). So altogether, it should look like this:</p>
 <pre><code>[link to Google](https://www.google.com)</code></pre>
-<p>The output looks like this: <a href="https://www.google.com">link to Google</a></p>
-<p>If you just want to show the link, you can paste it as is into your file.</p>
-<pre><code>https://www.google.com</code></pre>
-<p><a href="https://www.google.com" class="uri">https://www.google.com</a></p>
-<p>Try adding some links to your <code>index.md</code> file, such as to your GitHub or Twitter accounts. Click the “Commit Your Changes” button when you’re done.</p>
+<p>Try updating your bio and adding some links to your <code>index.md</code> file, such as recently published paper or Github repo. Click the “Commit Your Changes” button when you’re done.</p>
 </div>
 <div id="lets-add-an-image-from-an-external-website" class="section level2">
 <h2>Let’s Add an Image (from an external website)</h2>
@@ -303,13 +304,14 @@ owner:
 <div id="uploading-images-to-your-website-and-using-them" class="section level2">
 <h2>Uploading images to your website and using them</h2>
 <p>Where do you put images you’ve made? In the <code>images/</code> folder. Upload a photo of yourself to this folder (Click the “Upload Files” button), and make sure it is named <code>bio-photo.jpg</code>.</p>
-<p>Now you can upload images into to that directory using the <code>Upload Files</code> button. Then you can refer to them in your website like this:</p>
+<p>Now you can upload your headshot or another image into to that directory using the <code>Upload Files</code> button. Then you can refer to them in your website like this:</p>
 <pre><code>![](images/bio-photo.jpg)</code></pre>
+<p>Now check out your website again. The picture you uploaded should have replaced the generic image we started with. Take another lookl at your <code>_config.yml</code> file to understand why.</p>
 </div>
 <div id="add-a-blog-entry" class="section level2">
 <h2>Add a Blog Entry</h2>
-<p>Your current repository is set up for blog entries. In your root folder, you’ll find another folder named <code>_posts</code>. This is where you’ll put new blog posts. Open this folder and create a new file.</p>
-<p>Each post you make should be in the form <code>YEAR-MONTH-DAY-title.md</code>, so for example, <code>2017-04-21-github-pages-tutorial.md</code>. You’ll also want a <code>.yaml</code>-like text near the top.</p>
+<p>Your website is set up to publish blog entries. In your root folder, you’ll find folder named <code>_posts</code>. This is where you’ll put new blog posts. Open this folder and create a new file.</p>
+<p>Each post you make should be in the form <code>YEAR-MONTH-DAY-title.md</code>, so for example, <code>2017-04-21-github-pages-tutorial.md</code>. You’ll also want this <code>.yaml</code>-like text near the top.</p>
 <pre><code>---
 layout: post
 title: Awesome Blog Post

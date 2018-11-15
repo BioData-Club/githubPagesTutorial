@@ -181,17 +181,19 @@ The output looks like this:
 
 Where do you put images you've made? In the `images/` folder. Upload a photo of yourself to this folder (Click the "Upload Files" button), and make sure it is named `bio-photo.jpg`.
 
-Now you can upload images into to that directory using the `Upload Files` button. Then you can refer to them in your website like this:
+Now you can upload your headshot or another image into to that directory using the `Upload Files` button. Then you can refer to them in your website like this:
 
 ```
 ![](images/bio-photo.jpg)
 ```
 
+Now check out your website again.  The picture you uploaded should have replaced the generic image we started with.  Take another lookl at your `_config.yml` file to understand why.
+
 ## Add a Blog Entry
 
-Your current repository is set up for blog entries. In your root folder, you'll find another folder named `_posts`. This is where you'll put new blog posts. Open this folder and create a new file.
+Your website is set up to publish blog entries. In your root folder, you'll find folder named `_posts`. This is where you'll put new blog posts. Open this folder and create a new file.
 
-Each post you make should be in the form `YEAR-MONTH-DAY-title.md`, so for example, `2017-04-21-github-pages-tutorial.md`. You'll also want a `.yaml`-like text near the top.
+Each post you make should be in the form `YEAR-MONTH-DAY-title.md`, so for example, `2017-04-21-github-pages-tutorial.md`. You'll also want this `.yaml`-like text near the top.
 
 ```
 ---
